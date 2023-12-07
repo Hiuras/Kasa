@@ -1,0 +1,20 @@
+.imagePresentation {
+    width: 1240px;
+    height: 223px; 
+    border-radius: 25px;
+    margin-left: 45px;
+    margin-right: 45px;
+    object-fit: cover;
+    background: #000;
+}
+
+.titreImage {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-top: -153px;
+    padding-left: 392px;
+}
