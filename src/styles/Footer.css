@@ -1,0 +1,18 @@
+.footer {
+    width: 1440px;
+    height: 209px;
+    background: #000; 
+    margin-top: 50px;
+}
+
+.logoFooter {
+    padding-top: 66px;
+    padding-left: 463px;
+    margin-bottom: 29px;
+}
+
+.footerText {
+    color: white;
+    padding-left: 463px;
+    margin: 0;
+}

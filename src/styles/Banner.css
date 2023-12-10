@@ -12,6 +12,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
+    cursor: pointer;
 }
 
 .reference:nth-child(2) {
@@ -20,4 +21,12 @@
 
 .reference:nth-child(3) {
     margin-left: 57px;
+}
+
+.reference:nth-child(3):hover {
+    text-decoration: underline;
+}
+
+.reference:nth-child(2):hover {
+    text-decoration: underline;
 }

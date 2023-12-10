@@ -1,5 +1,7 @@
 import Banner from './Banner';
 import Main from './Main';
+import Cards from './Cards';
+import Footer from './Footer';
 import '../App.css';
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     <div className='forme'>
    <Banner />
    <Main />
+   <Cards />
+   <Footer />
    </div>
   );
 }

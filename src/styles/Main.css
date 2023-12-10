@@ -6,6 +6,7 @@
     margin-right: 45px;
     object-fit: cover;
     background: #000;
+    filter: brightness(0.7);
 }
 
 .titreImage {
@@ -17,4 +18,5 @@
     line-height: 142.6%;
     margin-top: -153px;
     padding-left: 392px;
+    filter: brightness(1);
 }
