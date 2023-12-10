@@ -1,8 +1,45 @@
 .Cards-background {
     border-radius: 25px;
-    background: #F6F6F6; 
+    background: black; 
     width: 1240px;
     height: 829px;
     margin-left: 45px;
     margin-top: 110px;
+    overflow: hidden;
+}
+
+.card {
+    width: 340px;
+    height: 340px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    overflow: scroll;
+    height: 888px;
+    grid-gap: 80px;
+}
+
+.cards-Main {
+    border-radius: 10px;
+
+}
+
+.cards-Main h3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.cards-Main img {
+    width: 340px;
+    height: 340px; 
+    border-radius: 10px;
 }
