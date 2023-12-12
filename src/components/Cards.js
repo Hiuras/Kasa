@@ -10,8 +10,8 @@ function Cards() {
             <div className="card-container">
               {logement.map((item, index) => (
                 <div className="card" key={index}>
-                  <h3>{item.title}</h3>
                   <img src={item.cover} alt='image de la maison' />
+                  <h3>{item.title}</h3>
                 </div>
               ))}
             </div>
