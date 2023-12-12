@@ -15,7 +15,7 @@
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     overflow: scroll;
     height: 888px;
     grid-gap: 80px;
