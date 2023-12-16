@@ -13,14 +13,17 @@
     font-weight: 500;
     line-height: 142.6%;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .reference:nth-child(2) {
     margin-left: 720px;
+    margin-top: 26px;
 }
 
 .reference:nth-child(3) {
     margin-left: 57px;
+    margin-top: 26px;
 }
 
 .reference:nth-child(3):hover {

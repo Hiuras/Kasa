@@ -1,11 +1,12 @@
 .Cards-background {
     border-radius: 25px;
-    background: black; 
+    background: #F6F6F6; 
     width: 1240px;
     height: 829px;
     margin-left: 45px;
     margin-top: 110px;
     overflow: hidden;
+    margin-left: 80px;
 }
 
 .card {
