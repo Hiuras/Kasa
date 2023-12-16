@@ -7,9 +7,26 @@ import { Link } from 'react-router-dom';
 
 function About() {
 
-    const handleClick = () => {
-        console.log('fleche cliquée')
-    }
+  let isArrowRotated = false;
+
+  const rotateArrow = () => {
+      const arrowBack = document.querySelector('.arrowBack');
+      const description = document.querySelector('.description');
+  
+      if (!isArrowRotated) {
+          arrowBack.style.transform = 'rotate(180deg)';
+          description.style.height = '85px';
+      } else {
+          arrowBack.style.transform = 'rotate(0deg)';
+          description.style.height = '0px';
+      }
+  
+      isArrowRotated = !isArrowRotated;
+  
+      arrowBack.style.transitionDuration = '1s';
+      description.style.transitionDuration = '1s';
+  };
+
 
   return (
     <div>
@@ -23,19 +40,22 @@ function About() {
       </div>
       <div className='cards'>
         <h1>Fiabilité</h1>
-        <img src={Arrow} alt='fleche' onClick={handleClick} id='arrowBack' />
+        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrowBack' />        
+        </div>
+        <div className='description'>
+          <p>Les annonces postées sur Kasa garantissent une Fiabilité totale.Les photos sont conformes aux logements,et <br />toutes les informations sont régulièrement verifiées par nos equipes</p>
       </div>
       <div className='cards'>
         <h1>Respect</h1>
-        <img src={Arrow} alt='fleche' onClick={handleClick} id='arrowBack' />
+        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrowBack' />
       </div>
       <div className='cards'>
         <h1>Service</h1>
-        <img src={Arrow} alt='fleche' onClick={handleClick} id='arrowBack' />
+        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrowBack' />
       </div>
       <div className='cards'>
         <h1>Sécurité</h1>
-        <img src={Arrow} alt='fleche' onClick={handleClick} id='arrowBack' />
+        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrowBack' />
       </div>
     <div className='footer'>
         <img src={Footer} alt='logo Footer' className='footerLogo' />
