@@ -6,13 +6,10 @@
 }
 
 .logoFooter {
-    padding-top: 66px;
-    padding-left: 463px;
     margin-bottom: 29px;
 }
 
 .footerText {
     color: white;
-    padding-left: 463px;
-    margin: 0;
+    margin-top: -25px;
 }

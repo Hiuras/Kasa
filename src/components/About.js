@@ -38,6 +38,7 @@ function About() {
       <div className="main">
         <img src={presentationImage} alt="image de presentation" />
       </div>
+      <div className='cardsPosition'>
       <div className='cards'>
         <h1>Fiabilité</h1>
         <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrowBack' />        
@@ -56,6 +57,7 @@ function About() {
       <div className='cards'>
         <h1>Sécurité</h1>
         <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrowBack' />
+      </div>
       </div>
     <div className='footer'>
         <img src={Footer} alt='logo Footer' className='footerLogo' />
