@@ -1,0 +1,18 @@
+$color_1: #FF6060;
+$font-family_1: Montserrat;
+
+.main {
+	width: 1240px;
+	height: 415px;
+	border-radius: 25px;
+	margin-top: 50px;
+	margin-left: 70px;
+}
+.title {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 142.6%;
+}

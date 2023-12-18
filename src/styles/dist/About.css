@@ -14,8 +14,7 @@
   width: 1240px;
   height: 223px;
   border-radius: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: 38px;
   filter: brightness(0.7);
 }
@@ -88,4 +87,4 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
-}/*# sourceMappingURL=About.css.map */
+}
