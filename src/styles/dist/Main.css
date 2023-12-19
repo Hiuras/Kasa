@@ -4,8 +4,7 @@
   border-radius: 25px;
   margin-right: 45px;
   margin-left: 45px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background: #000;
   filter: brightness(0.7);
 }
@@ -20,4 +19,4 @@
   margin-top: -153px;
   padding-left: 265px;
   filter: brightness(1);
-}/*# sourceMappingURL=Main.css.map */
+}

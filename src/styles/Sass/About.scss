@@ -14,11 +14,12 @@ $font-family_1: Montserrat;
 		text-decoration: none;
 	}
 }
-.main {
+.aboutMain {
 	img {
 		width: 1240px;
 		height: 223px;
 		border-radius: 25px;
+		margin-left: 70px;
 		object-fit: cover;
 		margin-top: 38px;
 		filter: brightness(0.7);
@@ -26,7 +27,7 @@ $font-family_1: Montserrat;
 }
 
 .cardsPosition {
-  margin-top: -117px;
+  margin-top: 0px;
 .cards {
 	margin-top: 38px;
 	margin-left: 150px;

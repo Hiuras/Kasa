@@ -35,7 +35,7 @@ function About() {
         <Link to='/' className="reference">Accueil</Link>
         <h2 className="reference">A Propos</h2>
       </div>
-      <div className="main">
+      <div className="aboutMain">
         <img src={presentationImage} alt="image de presentation" />
       </div>
       <div className='cardsPosition'>
