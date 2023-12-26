@@ -4,7 +4,7 @@ import logement from '../logements.json';
 import Arrow from '../assets/arrow_back.png'
 import arrowLeft from '../assets/Arrow_left.png'
 import arrowRight from '../assets/Arrrow_right.png'
-import '../styles/Logement.css'
+import '../styles/Styles.css'
 import { Link } from 'react-router-dom';
 
 function Logement() {
@@ -37,7 +37,7 @@ function Logement() {
                 <Link to='/about' className='reference'> A Propos </Link>
             </div>
             <div className='picture'>
-                {logement.length > 0 && <img src={logement[0].cover} alt="Image des logements" />}
+                {logement.length > 0 && <img src={logement[0].pictures[1]} alt="Image des logements" />}
                 <img src={arrowLeft} alt='Fleche gauche' className='arrowLeft' />
                 <img src={arrowRight} alt='Fleche gauche' className='arrowRight' />
             </div>
@@ -49,14 +49,19 @@ function Logement() {
             {logement.length > 0 && <h1>{logement[0].tags[0]}</h1>}
             {logement.length > 0 && <h1>{logement[0].tags[1]}</h1>}
             {logement.length > 0 && <h1>{logement[0].tags[2]}</h1>}
+            <div className='host'>
+            {logement.length > 0 && <p className='host'>{logement[0].host.name}</p>}
+            </div>
             </div>
             <div className='CardsPosition'>
             <div className='cards'>
         <h1>Fiabilité</h1>
-        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
+        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />
         </div>
         <div className='description'>
         {logement.length > 0 && <p>{logement[0].description}</p>}
+      </div>
+      <div className='rating'>
       </div>
       <div className='cardsEquipement'>
         <h1>equipments</h1>

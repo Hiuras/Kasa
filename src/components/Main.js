@@ -1,4 +1,4 @@
-import '../styles/Main.css'
+import '../styles/Styles.css'
 import image from '../assets/IMG.png'
 
 function Main() {

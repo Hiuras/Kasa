@@ -1,5 +1,5 @@
 import logoImage from '../assets/LOGO.png';
-import '../styles/About.css'
+import '../styles/Styles.css'
 import presentationImage from '../assets/kalen-emsley.png';
 import  Arrow  from '../assets/arrow_back.png';
 import Footer from '../assets/Footer.png';

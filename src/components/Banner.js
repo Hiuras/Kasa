@@ -1,4 +1,4 @@
-import '../styles/Banner.css'
+import '../styles/Styles.css'
 import logo from '../assets/LOGO.png'
 import { Link } from 'react-router-dom';
 

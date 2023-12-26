@@ -1,7 +1,7 @@
 import logo from '../assets/LOGO.png';
 import Footer from '../assets/Footer.png';
 import { Link } from 'react-router-dom';
-import '../styles/Error.css'
+import '../styles/Styles.css'
 
 function error() {
     return (
