@@ -565,6 +565,19 @@ body {
 }
 
 /*Error*/
+.Main h1 {
+  width: 198px;
+  height: 98px;
+  font-size: 96px;
+  margin-left: 620px;
+}
+
+.Main p {
+  font-size: 18px;
+  width: 260px;
+  margin-left: 610px;
+}
+
 /*Logement*/
 .picture img {
   width: 335px;
