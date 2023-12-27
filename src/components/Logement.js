@@ -53,8 +53,8 @@ function Logement() {
             {logement.length > 0 && <p className='host'>{logement[0].host.name}</p>}
             </div>
             </div>
-            <div className='CardsPosition'>
-            <div className='cards'>
+            <div className='CardsPositionLogement'>
+            <div className='cardsEquipement'>
         <h1>Fiabilité</h1>
         <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />
         </div>

@@ -398,10 +398,10 @@ body {
   line-height: 142.6%;
 }
 
-.CardsPosition {
+.CardsPositionLogement {
   display: flex;
 }
-.CardsPosition .cards {
+.CardsPositionLogement .cards {
   width: 582px;
   padding: 10px 20px 10px 10px;
   border-radius: 10px;
@@ -409,7 +409,7 @@ body {
   margin-left: 60px;
   display: flex;
 }
-.CardsPosition .cards h1 {
+.CardsPositionLogement .cards h1 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -418,14 +418,14 @@ body {
   line-height: 142.6%;
   margin-left: 0;
 }
-.CardsPosition .cards img {
+.CardsPositionLogement .cards img {
   margin-left: 450px;
   width: 32px;
   height: 32px;
   margin-top: 7px;
   cursor: pointer;
 }
-.CardsPosition .cardsEquipement {
+.CardsPositionLogement .cardsEquipement {
   width: 582px;
   padding: 10px 20px 10px 10px;
   border-radius: 10px;
@@ -434,7 +434,7 @@ body {
   display: flex;
   margin-left: 0;
 }
-.CardsPosition .cardsEquipement h1 {
+.CardsPositionLogement .cardsEquipement h1 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -443,7 +443,7 @@ body {
   line-height: 142.6%;
   margin-left: 0;
 }
-.CardsPosition .cardsEquipement img {
+.CardsPositionLogement .cardsEquipement img {
   margin-left: 410px;
   width: 32px;
   height: 32px;
@@ -509,4 +509,96 @@ body {
   width: 133.594px;
   font-size: 12px;
   margin-left: 620px;
+}
+
+/*About*/
+.banner {
+  width: 335px;
+  margin-left: 550px;
+}
+.banner img {
+  width: 145px;
+}
+.banner :nth-child(2) {
+  margin-left: 43px;
+  width: 55;
+  font-size: 12px;
+}
+.banner :nth-child(3) {
+  margin-left: 26px;
+  width: 55px;
+  font-size: 12px;
+}
+
+.aboutMain {
+  margin-left: 480px;
+}
+.aboutMain img {
+  width: 335px;
+  height: 111px;
+}
+
+.cardsPosition {
+  width: 335px;
+  height: 300px;
+  margin-bottom: 19px;
+}
+.cardsPosition .cards {
+  height: 30px;
+  width: 335px;
+  margin-left: 534px;
+}
+.cardsPosition .cards h1 {
+  font-size: 13px;
+  color: #FFF;
+  padding-top: 6px;
+}
+.cardsPosition .cards img {
+  color: #FFF;
+  margin-left: 250px;
+}
+
+.footer .footerH2 {
+  width: 133px;
+  margin-left: 620px;
+  font-size: 12px;
+}
+
+/*Error*/
+/*Logement*/
+.picture img {
+  width: 335px;
+  margin-left: 480px;
+}
+
+.title {
+  width: 335px;
+  height: 46px;
+  font-size: 18px;
+  margin-left: 550px;
+}
+
+.tags {
+  margin-left: 525px;
+  margin-top: 65px;
+  width: 84px;
+  height: 18px;
+}
+.tags p {
+  font-size: 10px;
+}
+
+.CardsPositionLogement {
+  display: flex;
+  flex-direction: column;
+}
+.CardsPositionLogement .cardsEquipement {
+  margin-left: 0;
+  width: 335px;
+  height: 30px;
+  margin-left: 535px;
+  margin-bottom: 10px;
+}
+.CardsPositionLogement h1 {
+  margin-top: 3px;
 }/*# sourceMappingURL=Styles.css.map */
