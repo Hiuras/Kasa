@@ -1,0 +1,15 @@
+.footer {
+  width: 1440px;
+  height: 209px;
+  background: #000;
+  margin-top: 50px;
+}
+
+.logoFooter {
+  margin-bottom: 0;
+}
+
+.footerText {
+  color: white;
+  margin-top: -25px;
+}/*# sourceMappingURL=Footer.css.map */

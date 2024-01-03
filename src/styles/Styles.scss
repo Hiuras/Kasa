@@ -159,6 +159,7 @@ body {
 	color: $color_1;
 	display: flex;
 	h1 {
+		color: $color_2	;
 		margin: 0;
 		font-family: $font-family_1;
 		font-size: 24px;
@@ -476,7 +477,7 @@ body {
             font-size: 12px; 
         }
     }
-}
+
 
 .main {
     .imagePresentation{
@@ -631,4 +632,6 @@ body {
     h1 {
         margin-top: 3px;
     }
+}
+
 }

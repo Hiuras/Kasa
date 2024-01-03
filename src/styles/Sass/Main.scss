@@ -1,0 +1,24 @@
+$color_1: #FFF;
+$font-family_1: Montserrat;
+
+.imagePresentation {
+	width: 1240px;
+	height: 235px;
+	border-radius: 25px;
+	margin-right: 45px;
+	margin-left: 45px;
+	object-fit: cover;
+	background: #000;
+	filter: brightness(0.7);
+}
+.titreImage {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 142.6%;
+	margin-top: -153px;
+	padding-left: 265px;
+	filter: brightness(1);
+}

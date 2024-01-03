@@ -1,0 +1,93 @@
+@import url(../styles/font.scss);
+
+/*SCSS*/
+$color_1: #FFF;
+$color_2: #FF6060;
+$font-family_1: Montserrat;
+
+.banner {
+	display: flex;
+	margin-top: 40px;
+	margin-left: 80px;
+	a {
+		margin-top: 22px;
+		text-decoration: none;
+	}
+}
+.aboutMain {
+	img {
+		width: 1240px;
+		height: 223px;
+		border-radius: 25px;
+		margin-left: 70px;
+		object-fit: cover;
+		margin-top: 38px;
+		filter: brightness(0.7);
+	}
+}
+
+.cardsPosition {
+  margin-top: 0px;
+.cards {
+	margin-top: 38px;
+	margin-left: 150px;
+	padding: 10px 20px 10px 15px;
+	width: 1023px;
+	background: var(--Red, #FF6060);
+	border-radius: 5px;
+	color: $color_1;
+	display: flex;
+	h1 {
+		margin: 0;
+		font-family: $font-family_1;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 142.6%;
+	}
+	img {
+		margin-left: 900px;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+	}
+}
+}
+.description {
+	height: 0px;
+	background: var(--Gray, #F6F6F6);
+	overflow: hidden;
+	width: 1050px;
+	margin-left: 153px;
+	border-radius: 0px 0px 5px 5px;
+	p {
+		color: $color_2;
+		font-family: $font-family_1;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 142.6%;
+		display: flex;
+		justify-content: center;
+	}
+}
+.footer {
+	width: 1440px;
+	height: 209px;
+}
+.footerLogo {
+	margin: 66px 464px 29px 463px;
+}
+.footerH2 {
+	margin-top: -30px;
+	margin-left: 430px;
+	color: $color_1;
+	width: 513px;
+	height: 46px;
+	text-align: center;
+	font-family: $font-family_1;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 142.6%;
+}
