@@ -1,15 +1,22 @@
+import React from 'react';
 import logo from '../assets/LOGO.png'
 import logoFooter from '../assets/Footer.png'
+import { useParams, Link } from 'react-router-dom';
 import logement from '../logements.json';
-import Arrow from '../assets/arrow_back.png'
-import arrowLeft from '../assets/Arrow_left.png'
-import arrowRight from '../assets/Arrrow_right.png'
-import '../styles/Styles.css'
-import { Link } from 'react-router-dom';
+import Arrow from '../assets/arrow_back.png';
+import arrowLeft from '../assets/Arrow_left.png';
+import arrowRight from '../assets/Arrrow_right.png';
+import '../styles/Styles.css';
 
 function Logement() {
+  const { id } = useParams();
+  const selectedLogement = logement.find(item => item.id === id);
 
-    function rotateArrow() {
+  if (!selectedLogement) {
+    return <div>Logement non trouvé</div>;
+  }
+
+function rotateArrow() {
         let isArrowRotated = false;
 
         const arrowBack = document.querySelector('.arrow');
@@ -29,54 +36,59 @@ function Logement() {
         description.style.transitionDuration = '1s';
     }
 
-    return (
-        <div>
-            <div className="banner">
-                <img src={logo} alt='logo du site' />
-                <Link to='/' className='reference'> Accueil </Link>
-                <Link to='/about' className='reference'> A Propos </Link>
-            </div>
-            <div className='picture'>
-                {logement.length > 0 && <img src={logement[0].pictures[1]} alt="Image des logements" />}
-                <img src={arrowLeft} alt='Fleche gauche' className='arrowLeft' />
-                <img src={arrowRight} alt='Fleche gauche' className='arrowRight' />
-            </div>
-            <div className='title'>
-                {logement.length > 0 && <h1>{logement[0].title}</h1>}
-                {logement.length > 0 && <h2 className='location'>{logement[0].location}</h2>}
-            </div>
-            <div className='tags'>
-            {logement.length > 0 && <h1>{logement[0].tags[0]}</h1>}
-            {logement.length > 0 && <h1>{logement[0].tags[1]}</h1>}
-            {logement.length > 0 && <h1>{logement[0].tags[2]}</h1>}
-            <div className='host'>
-            {logement.length > 0 && <p className='host'>{logement[0].host.name}</p>}
-            </div>
-            </div>
-            <div className='CardsPositionLogement'>
-            <div className='cardsEquipement'>
-        <h1>Fiabilité</h1>
-        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />
+  return (
+    <div>
+      <div className="banner">
+        <img src={logo} alt='logo du site' />
+        <Link to='/' className='reference'> Accueil </Link>
+        <Link to='/about' className='reference'> A Propos </Link>
+      </div>
+      <div className='picture'>
+        {selectedLogement.pictures.length > 0 && (
+          <img src={selectedLogement.pictures[1]} alt="Image des logements" />
+        )}
+        <img src={arrowLeft} alt='Fleche gauche' className='arrowLeft' />
+        <img src={arrowRight} alt='Fleche gauche' className='arrowRight' />
+      </div>
+      <div className='title'>
+        {selectedLogement.title && <h1>{selectedLogement.title}</h1>}
+        {selectedLogement.location && (
+          <h2 className='location'>{selectedLogement.location}</h2>
+        )}
+      </div>
+      <div className='tags'>
+        {selectedLogement.tags && selectedLogement.tags.map((tag, index) => (
+          <h1 key={index}>{tag}</h1>
+        ))}
+        <div className='host'>
+          {selectedLogement.host && <p className='host'>{selectedLogement.host.name}</p>}
+        </div>
+      </div>
+      <div className='CardsPositionLogement'>
+        <div className='cardsEquipement'>
+          <h1>Fiabilité</h1>
+          <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />
         </div>
         <div className='description'>
-        {logement.length > 0 && <p>{logement[0].description}</p>}
-      </div>
-      <div className='rating'>
-      </div>
-      <div className='cardsEquipement'>
-        <h1>equipments</h1>
-        <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
+          {selectedLogement.description && <p>{selectedLogement.description}</p>}
+        </div>
+        <div className='rating'>
+          {/* ... (éléments de notation) */}
+        </div>
+        <div className='cardsEquipement'>
+          <h1>Équipements</h1>
+          <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
         </div>
         <div className='description'>
-        {logement.length > 0 && <p>{logement[0].equipments}</p>}
+          {selectedLogement.equipments && <p>{selectedLogement.equipments}</p>}
+        </div>
       </div>
-            </div>
-            <div className='footer'>
-                <img src={logoFooter} alt='logo du footer' />
-                <p>© 2020 Kasa. All rights reserved</p>
-            </div>
-            </div>
-    );
+      <div className='footer'>
+        <img src={logoFooter} alt='logo du footer' />
+        <p>© 2020 Kasa. All rights reserved</p>
+      </div>
+    </div>
+  );
 }
 
 export default Logement;
