@@ -62,6 +62,9 @@ function rotateArrow() {
         ))}
         <div className='host'>
           {selectedLogement.host && <p className='host'>{selectedLogement.host.name}</p>}
+          {selectedLogement.host && (
+          <img className='host' src={selectedLogement.host.picture} alt='Host Picture' />
+        )}
         </div>
       </div>
       <div className='CardsPositionLogement'>
@@ -73,7 +76,7 @@ function rotateArrow() {
           {selectedLogement.description && <p>{selectedLogement.description}</p>}
         </div>
         <div className='rating'>
-          {/* ... (éléments de notation) */}
+        {selectedLogement.rating && <p>{selectedLogement.rating}</p>}
         </div>
         <div className='cardsEquipement'>
           <h1>Équipements</h1>

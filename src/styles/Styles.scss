@@ -152,7 +152,7 @@ body {
         width: 900px;
         height: 223px;
         border-radius: 25px;
-        margin-left: 70px;
+        margin-left: 205px;
         object-fit: cover;
         margin-top: 38px;
         filter: brightness(0.7);
@@ -170,6 +170,9 @@ body {
         border-radius: 5px;
         color: $color_1;
         display: flex;
+        .card-header {
+            height: 39.217px;
+        }
 
         h1 {
             color: $color_2;
@@ -186,6 +189,7 @@ body {
             width: 32px;
             height: 32px;
             cursor: pointer;
+            margin-top: -20px;
         }
     }
 }
@@ -373,10 +377,15 @@ body {
     margin-left: 60px;
     display: flex;
     align-items: center;
+    :nth-child(2) {
+        margin-left: 10px;
+    }
+    :nth-child(3) {
+        margin-left: 10px;
+    }
 
     h1 {
         color: #FFF;
-        text-align: center;
         font-family: Montserrat;
         font-size: 14px;
         font-style: normal;
@@ -385,6 +394,10 @@ body {
         padding: 3px 41px 2px 40px;
         width: 34px;
         height: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: $color_1;
+        border-radius: 100px;
     }
 
     &:nth-child(2) {
@@ -415,6 +428,13 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%;
+        display: flex;
+            img {
+                margin-left: 10px;
+                width: 64px;
+                height: 64px;
+                border-radius: 100%;
+            }
     }
 }
 
@@ -428,7 +448,6 @@ body {
         background: var(--Red, #FF6060);
         margin-left: 60px;
         display: flex;
-
         h1 {
             color: #FFF;
             font-family: Montserrat;
@@ -512,11 +531,29 @@ body {
 	}
 
 	/*Logement*/
+.banner {
+        width: 335px;
+        margin-left: 345px;
+        img {
+            width: 145px;
+        }
+        :nth-child(2) {
+            margin-left: 139%;
+            width: 55px;
+            font-size: 17px;
+        }
+        :nth-child(3) {
+            margin-left: 26px;
+            width: 55px;
+            font-size: 17px; 
+        }
+    }
 
 .picture {
+    width: 57%;
     img {
-        width: 335px;
-        margin-left: 480px;
+        width: 90%;
+        margin-left: 275px;
     }
 }
 
@@ -524,34 +561,52 @@ body {
     width: 335px;
     height: 46px; 
     font-size: 18px; 
-    margin-left: 550px;
+    margin-left: 344px;
+    margin-top: 0;
+    width: 500px;
 }
 
 .tags {
-    margin-left: 525px;
+    h1 {
+        background-color: $color_1;
+        border-radius: 25px;
+    }
+    margin-left: 346px;
     margin-top: 65px;
     width: 84px;
     height: 18px; 
     p{
         font-size: 10px; 
     }
+    .host {
+        margin-left: 0px;
+        display: flex;
+        img {
+            margin-left: 10px;
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+        }
+        p {
+            margin-left: 293px;
+        }
+    }
 }
 
 .CardsPositionLogement {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 900px;
+  margin-left: 275px;
     .cardsEquipement{
         margin-left: 0;
         width: 335px;
         height: 30px;
-        margin-left: 535px;
+        margin-left: 0;
         margin-bottom: 10px;
 		img {
 			margin-left: 227px;
 			  margin-top: 0px;
-		}
-		:nth-child(2) {
-			margin-left: 189px;
 		}
     }
     h1 {
@@ -677,15 +732,19 @@ body {
 }
 
 .description p {
-	width: 360px;
-	margin-left: 388px;
+	margin-left: 9px;
+    width: 326px;
 	height: 61.533px;
 	color: $color_1;
 	font-size: 11px;
 }
 
 .description {
-	margin-top: -7px;
+    height: 85px;
+    transition-duration: 1s;
+    margin-left: 535px;
+    width: 370px;
+    margin-top: 0px;
 }
 
 .cardsPosition {
@@ -704,6 +763,7 @@ body {
         img {
             color: $color_2;
             margin-left: 250px;
+            margin-top: -45px;
         }
     }
 }
@@ -749,7 +809,7 @@ body {
 
 .tags {
     margin-left: 525px;
-    margin-top: 65px;
+    margin-top: 115px;
     width: 84px;
     height: 18px; 
     p{
@@ -760,6 +820,8 @@ body {
 .CardsPositionLogement {
     display: flex;
     flex-direction: column;
+    margin-left: -20px;
+    width: 300px;
     .cardsEquipement{
         margin-left: 0;
         width: 335px;

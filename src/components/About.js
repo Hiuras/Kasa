@@ -6,18 +6,23 @@ import Arrow from '../assets/arrow_back.png';
 import Footer from '../assets/Footer.png';
 import { Link } from 'react-router-dom';
 
-const Card = ({ title, arrowIndex, rotateArrow, description }) => (
+const Card = ({ title, arrowIndex, rotateArrow }) => (
   <div className='cards'>
-    <h1>{title}</h1>
-    <img
-      src={Arrow}
-      alt='fleche'
-      onClick={() => rotateArrow(arrowIndex)}
-      className={`arrowBack arrowBack-${arrowIndex}`}
-    />
-    <div className={`description description-${arrowIndex}`}>
-      <p>{description}</p>
+    <div className='card-header'>
+      <h1>{title}</h1>
+      <img
+        src={Arrow}
+        alt='fleche'
+        onClick={() => rotateArrow(arrowIndex)}
+        className={`arrowBack arrowBack-${arrowIndex}`}
+      />
     </div>
+  </div>
+);
+
+const Description = ({ arrowIndex, description }) => (
+  <div className={`description description-${arrowIndex}`}>
+    <p>{description}</p>
   </div>
 );
 
@@ -98,21 +103,34 @@ function About() {
           title='Fiabilité'
           arrowIndex={1}
           rotateArrow={rotateArrow}
-          description='Les annonces postées sur Kasa garantissent une Fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.'
+        />
+        <Description
+        arrowIndex={1}
+        description='Les annonces postées sur Kasa garantissent une Fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.'
         />
         <Card title='Respect' 
         arrowIndex={2} 
         rotateArrow={rotateArrow}
-        description='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entrainera une exclusion de notre plateforme.' />
+        />
+        <Description
+        arrowIndex={2}
+        description='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entrainera une exclusion de notre plateforme.'
+        />
 
         <Card title='Service' 
         arrowIndex={3} 
         rotateArrow={rotateArrow}
+        />
+        <Description
+        arrowIndex={3}
         description='La ' />
 
         <Card title='Sécurité' 
         arrowIndex={4} 
         rotateArrow={rotateArrow}
+        />
+        <Description
+        arrowIndex={4}
         description='La sécurité est la priorité de Kasa. Aussi bien pour nos hotes que pour les voyageurs, chaque logement correspond aux critères de sécurité etablis par nos services. En laissant une note aussi bien a l hote qu au locataire, cela permet à nos équipes de verifier que les standards sont bien respectés. 
          Nous organisons également des ateliers sur la sécurité domestique pour nos hotes.' />
       </div>
