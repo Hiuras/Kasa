@@ -588,13 +588,16 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
   /*Acceuil*/
   .logo {
     width: 335px;
   }
   .logo img {
     width: 145px;
-    margin-left: 470px;
+    margin-left: 160px;
   }
   .logo :nth-child(2) {
     margin-left: 43px;
@@ -609,7 +612,7 @@ body {
   .main .imagePresentation {
     width: 335px;
     height: 111px;
-    margin-left: 550px;
+    margin-left: 220px;
   }
   .main p {
     font-size: 24px;
@@ -621,7 +624,7 @@ body {
   }
   .Cards-background {
     margin-top: 70px;
-    margin-left: 532px;
+    margin-left: 200px;
     height: 100%;
     width: 375px;
   }
@@ -633,6 +636,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+  .footer {
+    max-width: 768px;
   }
   .footer img {
     width: 122px;
@@ -662,7 +668,7 @@ body {
     font-size: 12px;
   }
   .aboutMain {
-    margin-left: 480px;
+    margin-left: 19%;
   }
   .aboutMain img {
     width: 335px;
@@ -687,6 +693,7 @@ body {
     width: 335px;
     height: 300px;
     margin-bottom: 19px;
+    margin-left: -43.5%;
   }
   .cardsPosition .cards {
     height: 30px;
@@ -703,15 +710,26 @@ body {
     margin-left: 250px;
     margin-top: -45px;
   }
-  .footer {
+  .footerAbout {
     margin-top: 174px;
+    max-width: 100%;
+    margin-top: 380px;
+    background-color: #000;
   }
-  .footer .footerH2 {
+  .footerAbout img {
+    margin-left: 267px;
+    width: 122px;
+    height: 40px;
+  }
+  .footerAbout .footerH2 {
     width: 133px;
-    margin-left: 620px;
+    margin-left: 322px;
     font-size: 12px;
   }
   /*Error*/
+  .Main {
+    margin-left: -345px;
+  }
   .Main h1 {
     width: 198px;
     height: 98px;
@@ -724,29 +742,46 @@ body {
     margin-left: 610px;
   }
   /*Logement*/
+  .banner {
+    margin-left: 227px;
+  }
   .picture img {
     width: 335px;
-    margin-left: 480px;
+    margin-left: 148px;
   }
   .title {
     width: 335px;
     height: 46px;
     font-size: 18px;
-    margin-left: 550px;
+    margin-left: 223px;
   }
   .tags {
-    margin-left: 525px;
-    margin-top: 115px;
+    margin-left: 202px;
+    margin-top: 45px;
     width: 84px;
     height: 18px;
   }
   .tags p {
     font-size: 10px;
   }
+  .tags .host {
+    margin-left: -443px;
+    width: 0px;
+    margin-top: 70px;
+  }
+  .tags .host img {
+    margin-left: 75px;
+  }
+  .rating {
+    margin-left: 28%;
+    margin-top: 0px;
+    margin-bottom: -22px;
+  }
   .CardsPositionLogement {
     display: flex;
     flex-direction: column;
-    margin-left: -20px;
+    margin-top: 50px;
+    margin-left: -334px;
     width: 300px;
   }
   .CardsPositionLogement .cardsEquipement {
@@ -765,5 +800,20 @@ body {
   }
   .CardsPositionLogement h1 {
     margin-top: 3px;
+  }
+  .CardsPositionLogement .description {
+    transition-duration: 1s;
+    width: 355px;
+    margin-top: -9px;
+    margin-left: 539px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .footer img {
+    margin-left: 317px;
+  }
+  .footer p {
+    margin-left: 316px;
   }
 }/*# sourceMappingURL=Styles.css.map */

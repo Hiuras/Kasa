@@ -36,7 +36,7 @@ function rotateArrow() {
 
         if (!isArrowRotated) {
             arrowBack.style.transform = 'rotate(180deg)';
-            description.style.height = '85px';
+            description.style.height = '109px;';
         } else {
             arrowBack.style.transform = 'rotate(0deg)';
             description.style.height = '0px';

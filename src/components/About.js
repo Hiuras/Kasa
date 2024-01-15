@@ -40,7 +40,7 @@ function About() {
 
     if (!isArrowRotated) {
       arrowBack.style.transform = 'rotate(180deg)';
-      description.style.height = '85px';
+      description.style.height = '125px';
     } else {
       arrowBack.style.transform = 'rotate(0deg)';
       description.style.height = '0px';
@@ -123,7 +123,7 @@ function About() {
         />
         <Description
         arrowIndex={3}
-        description='La ' />
+        description='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entrainera une exclusion de notre plateforme. ' />
 
         <Card title='Sécurité' 
         arrowIndex={4} 
@@ -134,7 +134,7 @@ function About() {
         description='La sécurité est la priorité de Kasa. Aussi bien pour nos hotes que pour les voyageurs, chaque logement correspond aux critères de sécurité etablis par nos services. En laissant une note aussi bien a l hote qu au locataire, cela permet à nos équipes de verifier que les standards sont bien respectés. 
          Nous organisons également des ateliers sur la sécurité domestique pour nos hotes.' />
       </div>
-      <div className='footer'>
+      <div className='footerAbout'>
         <img src={Footer} alt='logo Footer' className='footerLogo' />
         <h2 className='footerH2'>© 2020 Kasa. All rights reserved</h2>
       </div>
