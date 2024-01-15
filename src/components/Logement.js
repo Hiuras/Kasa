@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from '../assets/LOGO.png'
 import logoFooter from '../assets/Footer.png'
+import  { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logement from '../logements.json';
 import Arrow from '../assets/arrow_back.png';
 import arrowLeft from '../assets/Arrow_left.png';
@@ -11,11 +15,19 @@ import '../styles/Styles.css';
 function Logement() {
   const { id } = useParams();
   const selectedLogement = logement.find(item => item.id === id);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!selectedLogement) {
     return <div>Logement non trouvé</div>;
   }
 
+  const handlePrevClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? selectedLogement.pictures.length - 1 : prevIndex - 1));
+  };
+
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === selectedLogement.pictures.length - 1 ? 0 : prevIndex + 1));
+  };
 function rotateArrow() {
         let isArrowRotated = false;
 
@@ -36,6 +48,18 @@ function rotateArrow() {
         description.style.transitionDuration = '1s';
     }
 
+    function generateStars(rating) {
+      const maxStars = 5;
+      const redStars = Math.round(rating);
+      const stars = [];
+  
+      for (let i = 1; i <= maxStars; i++) {
+        stars.push(<FontAwesomeIcon key={i} icon={faStar} className={i <= redStars ? 'red-star' : 'gray-star'} />);
+      }
+  
+      return stars;
+    }
+
   return (
     <div>
       <div className="banner">
@@ -45,10 +69,10 @@ function rotateArrow() {
       </div>
       <div className='picture'>
         {selectedLogement.pictures.length > 0 && (
-          <img src={selectedLogement.pictures[1]} alt="Image des logements" />
+          <img src={selectedLogement.pictures[currentIndex]} alt="Image des logements" />
         )}
-        <img src={arrowLeft} alt='Fleche gauche' className='arrowLeft' />
-        <img src={arrowRight} alt='Fleche gauche' className='arrowRight' />
+        <img src={arrowLeft} alt='Fleche gauche' className='arrowLeft' onClick={handlePrevClick} />
+        <img src={arrowRight} alt='Fleche droite' className='arrowRight' onClick={handleNextClick} />
       </div>
       <div className='title'>
         {selectedLogement.title && <h1>{selectedLogement.title}</h1>}
@@ -67,6 +91,9 @@ function rotateArrow() {
         )}
         </div>
       </div>
+      <div className='rating'>
+        {selectedLogement.rating && generateStars(selectedLogement.rating)}
+      </div>
       <div className='CardsPositionLogement'>
         <div className='cardsEquipement'>
           <h1>Fiabilité</h1>
@@ -74,9 +101,6 @@ function rotateArrow() {
         </div>
         <div className='description'>
           {selectedLogement.description && <p>{selectedLogement.description}</p>}
-        </div>
-        <div className='rating'>
-        {selectedLogement.rating && <p>{selectedLogement.rating}</p>}
         </div>
         <div className='cardsEquipement'>
           <h1>Équipements</h1>
