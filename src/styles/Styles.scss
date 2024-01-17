@@ -1,0 +1,494 @@
+@import url(font.scss);
+$color_1 : #FF6060;
+$color_2 : #FFF;
+$color_3 : #F6F6F6;
+$color_4 : #000;
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+.logoAcceuil {
+    width: 1240px;
+    height: 68px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    img {
+        margin-right: 720px;
+    }
+    .reference {
+        color: $color_1;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+    }
+    :nth-child(3) {
+        margin-left: 57px;
+    }
+}
+
+.pictureAccueil {
+    width: 1240px;
+    height: 223px; 
+    margin-bottom: 43px;
+    img {
+        width: 1240px;
+        height: 223px; 
+        border-radius: 25px;
+        object-fit: cover;
+        filter: brightness(73%);
+        z-index: -1;
+    }
+    .pictureTitle {
+        color: $color_2;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+    }
+}
+
+.Cards-background {
+    background-color: $color_3;
+    width: 1240px;
+    height: 2800px;
+    border-radius: 25px;
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    .card {
+        margin-top: 50px;
+        margin-left: 40px;
+        width: 340px;
+        height: 340px;
+        img {
+            width: 340px;
+            height: 340px;
+            border-radius: 10px;
+        }
+        h3{
+            width: 300px; 
+            color: $color_2;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+            margin-top: -40px;
+            margin-left: 20px;
+            white-space: nowrap;
+        }
+    }
+}
+}
+
+.footerAccueil {
+    background-color: $color_4;
+    width: 100%;
+    height: 209px;
+    margin-top: 50px;
+    .footerKasa {
+        padding: 66px 464px 29px 463px; 
+        display: flex;
+        justify-content: center;
+    }
+    .footerText {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-top: 0;
+        width: 513px;
+        height: 46px; 
+        margin-left: 370px;
+    }
+}
+
+/*About*/
+
+.banner {
+    width: 100%;
+    height: 68px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    display: flex;
+    img {
+        margin-right: 720px;
+    }
+    .reference {
+        color: $color_1;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+    }
+    :nth-child(3) {
+        margin-left: 57px;
+        white-space: nowrap;
+    }
+    :nth-child(2) {
+        padding-top: 22px;
+    }
+}
+
+.pictureAbout {
+        width: 100%;
+        height: auto; 
+        img {
+            width: 100%;
+            height: 223px; 
+            border-radius: 25px; 
+            filter: brightness(73%);
+            object-fit: cover;
+        }
+}
+
+.cardsPosition {
+    width: 1023px;
+    margin-top: 38px;
+    margin-left: 95px;
+    .description {
+        background-color: $color_3;
+        margin-top: 0px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        p {
+            color: $color_1;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.6%;
+            margin-left: 20px;
+        }
+    }
+    .cards {
+        background-color: $color_1;
+        width: 1023px;
+        height: 52px;
+        border-radius: 5px;
+        .card-header{
+            height: 52px;
+            display: flex;
+        h1 {
+            color: $color_2;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+            width: 956px;
+            margin: 10px 0px 10px 15px;
+        }
+        img {
+            width: 32px;
+            height: 32px; 
+            margin-top: 8px;
+            cursor: pointer;
+        }
+    }
+}
+}
+
+.footerAbout{
+    background-color: $color_4;
+    width: 100%;
+    height: 209px;
+    margin-top: 50px;
+    .footerKasa {
+        padding: 66px 464px 29px 463px; 
+        display: flex;
+        justify-content: center;
+    }
+    .footerH2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-top: 0;
+        width: 513px;
+        height: 46px; 
+        margin-left: 370px;
+    }
+}
+
+/*Error*/
+
+.bannerError {
+    width: 100%;
+    height: 68px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    display: flex;
+    img {
+        margin-right: 720px;
+    }
+    .reference {
+        color: $color_1;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+    }
+    :nth-child(3) {
+        margin-left: 57px;
+        white-space: nowrap;
+        padding-top: 22px;
+    }
+    :nth-child(2) {
+        padding-top: 22px;
+    }
+}
+
+.Error404 {
+    justify-items: center;
+    display: grid;
+    h1 {
+        margin-top: 0;
+        width: 597px;
+        height: 263px; 
+        color: $color_1;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 288px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 142.6%;
+    }
+    p {
+        color: $color_1;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-bottom: 139px;
+    }
+    a {
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-decoration-line: underline; 
+        margin-bottom: 139px;
+    }
+}
+
+.footerError {
+    background-color: $color_4;
+    width: 100%;
+    height: 209px;
+    margin-top: 50px;
+    .footerKasa {
+        padding: 66px 464px 29px 463px; 
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-top: 0;
+        width: 513px;
+        height: 46px; 
+        margin-left: 340px;
+    }
+}
+
+/*Logement*/
+
+.banner {
+    width: 100%;
+    height: 68px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    display: flex;
+    img {
+        margin-right: 720px;
+    }
+    .reference {
+        color: $color_1;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+    }
+    :nth-child(3) {
+        margin-left: 57px;
+        white-space: nowrap;
+        padding-top: 0;
+    }
+    :nth-child(2) {
+        padding-top: 22px;
+    }
+}
+
+.pictureLogement {
+    width: 1240px;
+    height: 415px;
+    img {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+    }
+    .arrowLeft {
+        width: 46.68px;
+        height: 79.2px; 
+        position: fixed;
+        top: 345px;
+        left: 26px;
+        cursor: pointer;
+    }
+    .arrowRight {
+        width: 46.68px;
+        height: 79.2px; 
+        position: fixed;
+        top: 345px;
+        left: 1135px;
+        cursor: pointer;
+    }
+}
+
+.titleLogement {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    color: $color_1;
+    width: 635px;
+    white-space: nowrap;
+    h1 {
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-top: 0px;
+    }
+}
+
+.tagsLogement {
+    width: auto;
+    height: 45px;
+    flex-direction: row;
+    display: flex;
+    h1{
+        background-color: $color_1;
+        width: auto;
+        border-radius: 10px;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        white-space: nowrap;
+        margin-left: 10px;
+        padding: 3px 10px 10px 10px;
+}
+.host {
+    p {
+        margin-left: 435px;
+    }
+    img {
+        margin-left: 520px;
+        margin-top: -75px;
+        border-radius: 100%;
+        width: 64px;
+        height: 64px; 
+    }
+}
+}
+
+.CardsPositionLogement{
+    display: flex;
+.cardsEquipement {
+    width: 582px;
+    height: 52px;
+    background-color: $color_1;
+    display: flex;
+    border-radius: 10px;
+    h1 {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        width: 520px;
+    }
+    img {
+        width: 32px;
+        height: 32px;
+        margin-top: 10px;
+    }
+}
+.description {
+    width: 582px;
+}
+}
+
+.footerLogement {
+    background-color: $color_4;
+    width: 100%;
+    height: 209px;
+    margin-top: 50px;
+    .footerKasa {
+        padding: 66px 464px 29px 463px; 
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-top: 0;
+        width: 513px;
+        height: 46px; 
+        margin-left: 340px;
+    }
+}

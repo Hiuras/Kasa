@@ -1,0 +1,486 @@
+@import url(font.scss);
+html {
+  display: flex;
+  justify-content: center;
+}
+
+.logoAcceuil {
+  width: 1240px;
+  height: 68px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.logoAcceuil img {
+  margin-right: 720px;
+}
+.logoAcceuil .reference {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+}
+.logoAcceuil .reference:hover {
+  text-decoration: underline;
+}
+.logoAcceuil :nth-child(3) {
+  margin-left: 57px;
+}
+
+.pictureAccueil {
+  width: 1240px;
+  height: 223px;
+  margin-bottom: 43px;
+}
+.pictureAccueil img {
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(73%);
+  z-index: -1;
+}
+.pictureAccueil .pictureTitle {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+
+.Cards-background {
+  background-color: #F6F6F6;
+  width: 1240px;
+  height: 2800px;
+  border-radius: 25px;
+}
+.Cards-background .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.Cards-background .card-container .card {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 340px;
+  height: 340px;
+}
+.Cards-background .card-container .card img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+}
+.Cards-background .card-container .card h3 {
+  width: 300px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: -40px;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.footerAccueil {
+  background-color: #000;
+  width: 100%;
+  height: 209px;
+  margin-top: 50px;
+}
+.footerAccueil .footerKasa {
+  padding: 66px 464px 29px 463px;
+  display: flex;
+  justify-content: center;
+}
+.footerAccueil .footerText {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 0;
+  width: 513px;
+  height: 46px;
+  margin-left: 370px;
+}
+
+/*About*/
+.banner {
+  width: 100%;
+  height: 68px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.banner img {
+  margin-right: 720px;
+}
+.banner .reference {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+}
+.banner .reference:hover {
+  text-decoration: underline;
+}
+.banner :nth-child(3) {
+  margin-left: 57px;
+  white-space: nowrap;
+}
+.banner :nth-child(2) {
+  padding-top: 22px;
+}
+
+.pictureAbout {
+  width: 100%;
+  height: auto;
+}
+.pictureAbout img {
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  filter: brightness(73%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardsPosition {
+  width: 1023px;
+  margin-top: 38px;
+  margin-left: 95px;
+}
+.cardsPosition .description {
+  background-color: #F6F6F6;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.cardsPosition .description p {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
+  margin-left: 20px;
+}
+.cardsPosition .cards {
+  background-color: #FF6060;
+  width: 1023px;
+  height: 52px;
+  border-radius: 5px;
+}
+.cardsPosition .cards .card-header {
+  height: 52px;
+  display: flex;
+}
+.cardsPosition .cards .card-header h1 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  width: 956px;
+  margin: 10px 0px 10px 15px;
+}
+.cardsPosition .cards .card-header img {
+  width: 32px;
+  height: 32px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.footerAbout {
+  background-color: #000;
+  width: 100%;
+  height: 209px;
+  margin-top: 50px;
+}
+.footerAbout .footerKasa {
+  padding: 66px 464px 29px 463px;
+  display: flex;
+  justify-content: center;
+}
+.footerAbout .footerH2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 0;
+  width: 513px;
+  height: 46px;
+  margin-left: 370px;
+}
+
+/*Error*/
+.bannerError {
+  width: 100%;
+  height: 68px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.bannerError img {
+  margin-right: 720px;
+}
+.bannerError .reference {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+}
+.bannerError .reference:hover {
+  text-decoration: underline;
+}
+.bannerError :nth-child(3) {
+  margin-left: 57px;
+  white-space: nowrap;
+  padding-top: 22px;
+}
+.bannerError :nth-child(2) {
+  padding-top: 22px;
+}
+
+.Error404 {
+  justify-items: center;
+  display: grid;
+}
+.Error404 h1 {
+  margin-top: 0;
+  width: 597px;
+  height: 263px;
+  color: #FF6060;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
+}
+.Error404 p {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-bottom: 139px;
+}
+.Error404 a {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration-line: underline;
+  margin-bottom: 139px;
+}
+
+.footerError {
+  background-color: #000;
+  width: 100%;
+  height: 209px;
+  margin-top: 50px;
+}
+.footerError .footerKasa {
+  padding: 66px 464px 29px 463px;
+  display: flex;
+  justify-content: center;
+}
+.footerError p {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 0;
+  width: 513px;
+  height: 46px;
+  margin-left: 340px;
+}
+
+/*Logement*/
+.banner {
+  width: 100%;
+  height: 68px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.banner img {
+  margin-right: 720px;
+}
+.banner .reference {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+}
+.banner .reference:hover {
+  text-decoration: underline;
+}
+.banner :nth-child(3) {
+  margin-left: 57px;
+  white-space: nowrap;
+  padding-top: 0;
+}
+.banner :nth-child(2) {
+  padding-top: 22px;
+}
+
+.pictureLogement {
+  width: 1240px;
+  height: 415px;
+}
+.pictureLogement img {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+}
+.pictureLogement .arrowLeft {
+  width: 46.68px;
+  height: 79.2px;
+  position: fixed;
+  top: 345px;
+  left: 26px;
+  cursor: pointer;
+}
+.pictureLogement .arrowRight {
+  width: 46.68px;
+  height: 79.2px;
+  position: fixed;
+  top: 345px;
+  left: 1135px;
+  cursor: pointer;
+}
+
+.titleLogement {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  color: #FF6060;
+  width: 635px;
+  white-space: nowrap;
+}
+.titleLogement h1 {
+  margin-bottom: 15px;
+}
+.titleLogement h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 0px;
+}
+
+.tagsLogement {
+  width: auto;
+  height: 45px;
+  flex-direction: row;
+  display: flex;
+}
+.tagsLogement h1 {
+  background-color: #FF6060;
+  width: auto;
+  border-radius: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  white-space: nowrap;
+  margin-left: 10px;
+  padding: 3px 10px 10px 10px;
+}
+.tagsLogement .host p {
+  margin-left: 435px;
+}
+.tagsLogement .host img {
+  margin-left: 520px;
+  margin-top: -75px;
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+}
+
+.CardsPositionLogement {
+  display: flex;
+}
+.CardsPositionLogement .cardsEquipement {
+  width: 582px;
+  height: 52px;
+  background-color: #FF6060;
+  display: flex;
+  border-radius: 10px;
+}
+.CardsPositionLogement .cardsEquipement h1 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  width: 520px;
+}
+.CardsPositionLogement .cardsEquipement img {
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+}
+.CardsPositionLogement .description {
+  width: 582px;
+}
+
+.footerLogement {
+  background-color: #000;
+  width: 100%;
+  height: 209px;
+  margin-top: 50px;
+}
+.footerLogement .footerKasa {
+  padding: 66px 464px 29px 463px;
+  display: flex;
+  justify-content: center;
+}
+.footerLogement p {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 0;
+  width: 513px;
+  height: 46px;
+  margin-left: 340px;
+}/*# sourceMappingURL=Styles.css.map */
