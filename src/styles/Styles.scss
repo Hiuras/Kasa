@@ -544,11 +544,17 @@ html {
         img {
             width: 145px;
             margin-right: 0;
+            margin-left: 20px;
         }
         .reference {
             width: auto;
-            margin-left: 10px;
+            margin-left: 43px;
+            margin-top: 35px;
+            font-size: 12px; 
         }
+       :nth-child(3) {
+            margin-left: 26px;
+          }
     }
     
     .pictureAccueil {
@@ -565,10 +571,240 @@ html {
         height: auto;
     .card-container {
         display: block;
+        padding-top: 1px;
         .card {
-            margin-left: 20px;
+            margin-left: 45px;
         }
     }
+    }
+
+    .footerAccueil {
+        .footerKasa{
+            padding: 66px 0 0 0;
+        }
+        .footerText {
+            font-size: 12px; 
+            margin-left: 0px;
+            display: flex;
+            justify-content: center;
+            width: 375px;
+            margin-top: 10px;
+        }
+    }
+
+    /*About*/
+
+    .banner {
+        width: 100%;
+        img {
+            width: 145px;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        .reference {
+            width: auto;
+            margin-left: 43px;
+            margin-top: 35px;
+            font-size: 12px; 
+        }
+       :nth-child(3) {
+            margin-left: 26px;
+          }
+        :nth-child(2) {
+            padding-top: 0px;
+        }
+    }
+
+    .pictureAbout {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 90%;
+        }
+    }
+
+    .cardsPosition{
+        margin-left: 20px;
+        padding-left: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        .cards{
+            width: 335px;
+            height: 60px; 
+            .card-header{
+            h1 {
+                width: 250px;
+            }
+        }
+    }
+    .description{
+        width: 335px;
+    }
+    }
+
+    .footerAbout {
+        .footerKasa{
+            padding: 66px 0 0 0;
+        }
+        .footerH2 {
+            font-size: 12px; 
+            display: flex;
+            justify-content: center;
+            margin-left: 135px;
+            width: 133px;
+            margin-top: 10px;
+        }
+    }
+
+    /*Error*/
+
+    .bannerError {
+        width: 100%;
+        img {
+            width: 145px;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        .reference {
+            width: auto;
+            margin-left: 43px;
+            margin-top: 35px;
+            font-size: 12px; 
+        }
+       :nth-child(3) {
+            margin-left: 26px;
+            padding-top: 0;
+          }
+        :nth-child(2) {
+            padding-top: 0px;
+            margin-left: 100px;
+        }
+    }
+
+    .Error404 {
+        h1 {
+            width: 198px;
+            height: 99px;
+            color: #FF6060;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 142.6%;
+            margin-bottom: 116px;
+        }
+        P {
+            margin-top: 0;
+            width: 260px; 
+            color: #FF6060;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%; 
+        }
+        a {
+            width: 221px;
+            color: #FF6060;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%; /* 19.964px */
+            text-decoration-line: underline; 
+        }
+    }
+
+    .footerError {
+        .footerKasa{
+            padding: 66px 0 0 0;
+        }
+        p {
+            font-size: 12px; 
+            display: flex;
+            justify-content: center;
+            margin-left: 135px;
+            width: 133px;
+            margin-top: 10px;
+        }
+    }
+
+    /*Logement*/
+
+    .pictureLogement {
+        width: 100%;
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        img {
+            width: 335px;
+            height: 255px; 
+        }
+        .arrowRight{
+            left: 0;
+        }
+    }
+
+    .titleLogement {
+        width: 335px;
+        height: 46px; 
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin-left: 10px;
+        h1 {
+            margin-bottom: 5px;
+        }  
+        .host {
+            margin-top: -47px;
+            margin-left: -158px;
+            p{
+                margin-left: 385px;
+                margin-top: 87px;
+            }
+        }
+    }
+
+    .tagsLogement {
+        margin-top: 10px;
+    }
+
+    .ratingLogement {
+        margin-top: 0;
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .CardsPositionLogement{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 10px;
+        .cardsEquipement {
+            width: 335px;
+            height: 50px; 
+        }
+    }
+
+    .footerLogement {
+        .footerKasa{
+            padding: 66px 0 0 0;
+        }
+        p {
+            font-size: 12px; 
+            display: flex;
+            justify-content: center;
+            margin-left: 135px;
+            width: 133px;
+            margin-top: 10px;
+        }
     }
 
 }

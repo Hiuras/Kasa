@@ -43,7 +43,7 @@ function About() {
 
     if (!isArrowRotated) {
       arrowBack.style.transform = 'rotate(180deg)';
-      description.style.height = '125px';
+      description.style.height = 'auto';
     } else {
       arrowBack.style.transform = 'rotate(0deg)';
       description.style.height = '0px';
