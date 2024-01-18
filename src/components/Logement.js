@@ -80,19 +80,19 @@ function rotateArrow() {
       <div className='titleLogement'>
         {selectedLogement.title && <h1>{selectedLogement.title}</h1>}
         {selectedLogement.location && (
-          <h2 className='location'>{selectedLogement.location}</h2>
+          <h2 className='location'>{selectedLogement.location}
+                  <div className='host'>
+          {selectedLogement.host && <p className='host'>{selectedLogement.host.name}</p>}
+          {selectedLogement.host && (
+          <img className='host' src={selectedLogement.host.picture} alt='Host Picture' />
+        )}
+        </div></h2>
         )}
       </div>
       <div className='tagsLogement'>
         {selectedLogement.tags && selectedLogement.tags.map((tag, index) => (
           <h1 key={index}>{tag}</h1>
         ))}
-        <div className='host'>
-          {selectedLogement.host && <p className='host'>{selectedLogement.host.name}</p>}
-          {selectedLogement.host && (
-          <img className='host' src={selectedLogement.host.picture} alt='Host Picture' />
-        )}
-        </div>
       </div>
       <div className='ratingLogement'>
         {selectedLogement.rating && generateStars(selectedLogement.rating)}
@@ -109,7 +109,7 @@ function rotateArrow() {
           <h1>Équipements</h1>
           <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
         </div>
-        <div className='description'>
+        <div className='description2'>
           {selectedLogement.equipments && <p>{selectedLogement.equipments}</p>}
         </div>
       </div>

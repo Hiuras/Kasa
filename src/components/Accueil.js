@@ -19,7 +19,6 @@ function Accueil() {
 
         <div className='pictureAccueil'>
         <img src={image} alt='image de présentation' className='imagePresentation' />
-        <p className='pictureTitle'>Chez vous, partout et ailleurs</p>
         </div>
 
         <div className="Cards-background">

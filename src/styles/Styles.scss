@@ -369,7 +369,7 @@ html {
     .arrowLeft {
         width: 46.68px;
         height: 79.2px; 
-        position: fixed;
+        position: absolute;
         top: 345px;
         left: 26px;
         cursor: pointer;
@@ -377,7 +377,7 @@ html {
     .arrowRight {
         width: 46.68px;
         height: 79.2px; 
-        position: fixed;
+        position: absolute;
         top: 345px;
         left: 1135px;
         cursor: pointer;
@@ -386,7 +386,7 @@ html {
 
 .titleLogement {
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
@@ -403,6 +403,21 @@ html {
         font-weight: 500;
         line-height: 142.6%;
         margin-top: 0px;
+    }
+    .host {
+        margin-top: -45px;
+            height: 30.333px;
+            margin-left: 700px;
+        p {
+            margin-left: 435px;
+        }
+        img {
+            margin-left: 520px;
+            margin-top: -75px;
+            border-radius: 100%;
+            width: 64px;
+            height: 64px; 
+        }
     }
 }
 
@@ -426,18 +441,20 @@ html {
         margin-left: 10px;
         padding: 3px 10px 10px 10px;
 }
-.host {
-    p {
-        margin-left: 435px;
-    }
-    img {
-        margin-left: 520px;
-        margin-top: -75px;
-        border-radius: 100%;
-        width: 64px;
-        height: 64px; 
-    }
 }
+
+.ratingLogement {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+    margin-top: -28px;
+     margin-bottom: 30px;
+    .red-star {
+        color: $color_1;
+    }
+    .gray-star {
+        color: $color_3;
+    }
 }
 
 .CardsPositionLogement{
@@ -465,6 +482,15 @@ html {
 }
 .description {
     width: 582px;
+    margin-top: 51px;
+    margin-left: -615px;
+    height: 114px;
+    width: 545px;
+}
+
+.description2 {
+    margin-top: 51px;
+  margin-left: -544px;
 }
 }
 
@@ -491,4 +517,58 @@ html {
         height: 46px; 
         margin-left: 340px;
     }
+}
+
+@media screen and (max-width : 1024px){
+    .logoAcceuil {
+        width: 1024px;
+        display: flex;
+        .reference {
+            white-space: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width : 768px) {
+
+    body {
+        max-width: 768px;
+    }
+
+    html {
+        display: block;
+    }
+
+    .logoAcceuil {
+        width: 100%;
+        img {
+            width: 145px;
+            margin-right: 0;
+        }
+        .reference {
+            width: auto;
+            margin-left: 10px;
+        }
+    }
+    
+    .pictureAccueil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 335px;
+        }
+    }
+
+    .Cards-background{
+        width: 100%;
+        height: auto;
+    .card-container {
+        display: block;
+        .card {
+            margin-left: 20px;
+        }
+    }
+    }
+
 }

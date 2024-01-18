@@ -364,7 +364,7 @@ html {
 .pictureLogement .arrowLeft {
   width: 46.68px;
   height: 79.2px;
-  position: fixed;
+  position: absolute;
   top: 345px;
   left: 26px;
   cursor: pointer;
@@ -372,7 +372,7 @@ html {
 .pictureLogement .arrowRight {
   width: 46.68px;
   height: 79.2px;
-  position: fixed;
+  position: absolute;
   top: 345px;
   left: 1135px;
   cursor: pointer;
@@ -380,7 +380,7 @@ html {
 
 .titleLogement {
   font-family: Montserrat;
-  font-size: 36px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -398,6 +398,21 @@ html {
   font-weight: 500;
   line-height: 142.6%;
   margin-top: 0px;
+}
+.titleLogement .host {
+  margin-top: -45px;
+  height: 30.333px;
+  margin-left: 700px;
+}
+.titleLogement .host p {
+  margin-left: 435px;
+}
+.titleLogement .host img {
+  margin-left: 520px;
+  margin-top: -75px;
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
 }
 
 .tagsLogement {
@@ -421,15 +436,19 @@ html {
   margin-left: 10px;
   padding: 3px 10px 10px 10px;
 }
-.tagsLogement .host p {
-  margin-left: 435px;
+
+.ratingLogement {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 200px;
+  margin-top: -28px;
+  margin-bottom: 30px;
 }
-.tagsLogement .host img {
-  margin-left: 520px;
-  margin-top: -75px;
-  border-radius: 100%;
-  width: 64px;
-  height: 64px;
+.ratingLogement .red-star {
+  color: #FF6060;
+}
+.ratingLogement .gray-star {
+  color: #F6F6F6;
 }
 
 .CardsPositionLogement {
@@ -458,6 +477,14 @@ html {
 }
 .CardsPositionLogement .description {
   width: 582px;
+  margin-top: 51px;
+  margin-left: -615px;
+  height: 114px;
+  width: 545px;
+}
+.CardsPositionLogement .description2 {
+  margin-top: 51px;
+  margin-left: -544px;
 }
 
 .footerLogement {
@@ -483,4 +510,51 @@ html {
   width: 513px;
   height: 46px;
   margin-left: 340px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logoAcceuil {
+    width: 1024px;
+    display: flex;
+  }
+  .logoAcceuil .reference {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  html {
+    display: block;
+  }
+  .logoAcceuil {
+    width: 100%;
+  }
+  .logoAcceuil img {
+    width: 145px;
+    margin-right: 0;
+  }
+  .logoAcceuil .reference {
+    width: auto;
+    margin-left: 10px;
+  }
+  .pictureAccueil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pictureAccueil img {
+    width: 335px;
+  }
+  .Cards-background {
+    width: 100%;
+    height: auto;
+  }
+  .Cards-background .card-container {
+    display: block;
+  }
+  .Cards-background .card-container .card {
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=Styles.css.map */
