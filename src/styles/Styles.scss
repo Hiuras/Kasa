@@ -566,16 +566,47 @@ html {
         }
     }
 
-    .Cards-background{
+    .Cards-background {
+        background-color: $color_3;
         width: 100%;
+        margin: 0 auto;
         height: auto;
-    .card-container {
-        display: block;
-        padding-top: 1px;
-        .card {
-            margin-left: 45px;
+        border-radius: 25px;
+    
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-left: -35px;
+            margin-right: 55px;
+    
+            .card {
+                margin-top: 3%;
+                width: 100%;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+    
+                h3 {
+                    width: 100%;
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 142.6%;
+                    margin-top: -40px;
+                    margin-left: 20px;
+                    white-space: nowrap;
+                    max-width: 90%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
         }
-    }
     }
 
     .footerAccueil {
