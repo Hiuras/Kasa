@@ -105,7 +105,7 @@ function rotateArrow() {
         <div className='description'>
           {selectedLogement.description && <p>{selectedLogement.description}</p>}
         </div>
-        <div className='cardsEquipement'>
+        <div className='cardsEquipement2'>
           <h1>Équipements</h1>
           <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
         </div>

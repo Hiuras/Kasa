@@ -10,8 +10,8 @@ html {
 }
 
 .logoAcceuil {
-    width: 1240px;
-    height: 68px;
+    width: 100%;
+    height: auto;
     margin-top: 45px;
     margin-bottom: 50px;
     img {
@@ -30,7 +30,7 @@ html {
             }
     }
     :nth-child(3) {
-        margin-left: 57px;
+        margin-left: 2%;
     }
 }
 
@@ -70,12 +70,12 @@ html {
         width: 340px;
         height: 340px;
         img {
-            width: 340px;
-            height: 340px;
+            width: 100%;
+            height: 100%;
             border-radius: 10px;
         }
         h3{
-            width: 300px; 
+            width: 100%; 
             color: $color_2;
             font-family: Montserrat;
             font-size: 18px;
@@ -459,7 +459,7 @@ html {
 
 .CardsPositionLogement{
     display: flex;
-.cardsEquipement {
+.cardsEquipement,.cardsEquipement2 {
     width: 582px;
     height: 52px;
     background-color: $color_1;
@@ -486,11 +486,25 @@ html {
     margin-left: -615px;
     height: 114px;
     width: 545px;
+    color: $color_1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%;
+    background-color: $color_3;
 }
 
 .description2 {
     margin-top: 51px;
   margin-left: -544px;
+  color: $color_1;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
+  background-color: $color_3;
 }
 }
 
@@ -520,14 +534,178 @@ html {
 }
 
 @media screen and (max-width : 1024px){
+
+    body {
+        max-width: 1024px;
+    }
+
     .logoAcceuil {
-        width: 1024px;
+        width: 90%;
+        margin-left: 5%;
         display: flex;
+        img {
+            margin-right: 50%;
+        }
         .reference {
             white-space: nowrap;
+            padding-top: 3%;
         }
     }
-}
+
+    .pictureAccueil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 90%;
+        }
+    }
+
+    .Cards-background {
+        width: 100%;
+        height: auto;
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .card {
+                margin-left: 10%;
+            }
+        }
+    }
+
+    /*About*/
+
+    .banner {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        img {
+            margin-right: 50%;
+        }
+        .reference {
+            white-space: nowrap;
+            padding-top: 3%;
+        }
+        :nth-child(3) {
+            padding-top: 1%;
+        }
+    }
+
+    .pictureAbout {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 90%;
+        }
+    }
+
+    .cardsPosition {
+        margin-left: 5%;
+        .cards {
+            width: 90%;
+            .card-header {
+                h1 {
+                    width: 90%;
+                }
+            } 
+        }
+    } 
+
+    .description {
+        width: 90%;
+    }
+
+    /*Logement*/
+
+    .banner {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        img {
+            margin-right: 50%;
+        }
+        .reference {
+            white-space: nowrap;
+            padding-top: 3%;
+        }
+        :nth-child(3) {
+            padding-top: 1%;
+        }
+    }
+
+    .pictureLogement {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 90%;
+        }
+    }
+
+    .titleLogement {
+        font-size: 12px;
+        margin-left: 5%;
+    }
+
+    .tagsLogement {
+        margin-left: 4%;
+    }
+
+    .CardsPositionLogement {
+        width: 100%;
+        display: flex;
+        :nth-child(1) {
+            margin-left: 5%;
+            margin-right: -5%;
+        }
+        .cardsEquipement{
+            width: 40%;
+            h1 {
+                width: 80%;
+            }
+        }
+        .cardsEquipement2 {
+            width: 40%;
+            margin-left: 10%;
+            h1 {
+                width: 80%;
+            }
+        }
+        .description {
+            width: 40%;
+            height: auto;
+            margin-left: -359px;
+            p{
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+        .description2 {
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            margin-left: -407px;
+        }
+    }
+
+    /*Error*/
+
+    .bannerError {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        img {
+            margin-right: 50%;
+        }
+        .reference {
+            white-space: nowrap;
+            padding-top: 3%;
+        }
+    }
+
+
+    }
 
 @media screen and (max-width : 768px) {
 
@@ -548,7 +726,7 @@ html {
         }
         .reference {
             width: auto;
-            margin-left: 43px;
+            margin-left: 23px;
             margin-top: 35px;
             font-size: 12px; 
         }
@@ -562,7 +740,7 @@ html {
         display: flex;
         justify-content: center;
         img {
-            width: 335px;
+            width:  90%;
         }
     }
 
@@ -575,15 +753,15 @@ html {
     
         .card-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 20px;
             margin-left: -35px;
             margin-right: 55px;
     
             .card {
                 margin-top: 3%;
-                width: 100%;
-    
+                width: 80%;
+                height: auto;
                 img {
                     width: 100%;
                     height: auto;
@@ -618,7 +796,7 @@ html {
             margin-left: 0px;
             display: flex;
             justify-content: center;
-            width: 375px;
+            width: 100%;
             margin-top: 10px;
         }
     }
@@ -661,16 +839,16 @@ html {
         display: flex;
         flex-direction: column;
         .cards{
-            width: 335px;
+            width: 95%;
             height: 60px; 
             .card-header{
             h1 {
-                width: 250px;
+                width: 85%;
             }
         }
     }
     .description{
-        width: 335px;
+        width: 95%;
     }
     }
 
@@ -682,8 +860,8 @@ html {
             font-size: 12px; 
             display: flex;
             justify-content: center;
-            margin-left: 135px;
-            width: 133px;
+            margin-left: 0;
+            width: 100%;
             margin-top: 10px;
         }
     }
@@ -757,8 +935,7 @@ html {
             font-size: 12px; 
             display: flex;
             justify-content: center;
-            margin-left: 135px;
-            width: 133px;
+            width: 100%;
             margin-top: 10px;
         }
     }
@@ -771,7 +948,7 @@ html {
         display: flex;
         justify-content: center;
         img {
-            width: 335px;
+            width: 90%;
             height: 255px; 
         }
         .arrowRight{
@@ -819,8 +996,11 @@ html {
         margin-top: 50px;
         margin-left: 10px;
         .cardsEquipement {
-            width: 335px;
+            width: 80%;
             height: 50px; 
+            h1 {
+                margin-left: 10px;
+            }
         }
     }
 
