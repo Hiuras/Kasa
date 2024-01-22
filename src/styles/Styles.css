@@ -4,6 +4,10 @@ html {
   justify-content: center;
 }
 
+body {
+  max-width: 1440px;
+}
+
 .logoAcceuil {
   width: 100%;
   height: auto;
@@ -11,7 +15,7 @@ html {
   margin-bottom: 50px;
 }
 .logoAcceuil img {
-  margin-right: 720px;
+  margin-right: 60%;
 }
 .logoAcceuil .reference {
   color: #FF6060;
@@ -30,12 +34,12 @@ html {
 }
 
 .pictureAccueil {
-  width: 1240px;
-  height: 223px;
+  width: 100%;
+  height: auto;
   margin-bottom: 43px;
 }
 .pictureAccueil img {
-  width: 1240px;
+  width: 100%;
   height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
@@ -54,8 +58,8 @@ html {
 
 .Cards-background {
   background-color: #F6F6F6;
-  width: 1240px;
-  height: 2800px;
+  width: 100%;
+  height: auto;
   border-radius: 25px;
 }
 .Cards-background .card-container {
@@ -63,27 +67,30 @@ html {
   grid-template-columns: repeat(3, 1fr);
 }
 .Cards-background .card-container .card {
-  margin-top: 50px;
-  margin-left: 40px;
-  width: 340px;
-  height: 340px;
+  margin-top: 5%;
+  margin-left: 8%;
+  width: 90%;
+  height: 95%;
 }
 .Cards-background .card-container .card img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 10px;
 }
 .Cards-background .card-container .card h3 {
-  width: 100%;
+  width: 80%;
   color: #FFF;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
   margin-top: -40px;
   margin-left: 20px;
   white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footerAccueil {
@@ -156,15 +163,18 @@ html {
 }
 
 .cardsPosition {
-  width: 1023px;
+  width: 100%;
   margin-top: 38px;
-  margin-left: 95px;
+  margin-left: 0;
 }
 .cardsPosition .description {
   background-color: #F6F6F6;
   margin-top: 0px;
   margin-bottom: 16px;
   overflow: hidden;
+  width: 75%;
+  height: 0;
+  margin-left: 10%;
 }
 .cardsPosition .description p {
   color: #FF6060;
@@ -177,9 +187,10 @@ html {
 }
 .cardsPosition .cards {
   background-color: #FF6060;
-  width: 1023px;
+  width: 75%;
   height: 52px;
   border-radius: 5px;
+  margin-left: 10%;
 }
 .cardsPosition .cards .card-header {
   height: 52px;
@@ -586,16 +597,16 @@ html {
     width: 90%;
   }
   .cardsPosition {
-    margin-left: 5%;
+    margin-left: 0;
   }
   .cardsPosition .cards {
-    width: 90%;
+    width: 77%;
   }
   .cardsPosition .cards .card-header h1 {
     width: 90%;
   }
-  .description {
-    width: 90%;
+  .cardsPosition .description {
+    width: 77%;
   }
   /*Logement*/
   .banner {
@@ -712,17 +723,18 @@ html {
   }
   .Cards-background {
     background-color: #F6F6F6;
-    width: 100%;
+    width: 91%;
     margin: 0 auto;
     height: auto;
     border-radius: 25px;
   }
   .Cards-background .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     gap: 20px;
-    margin-left: -35px;
-    margin-right: 55px;
+    margin-left: -7%;
+    margin-right: -6%;
+    width: 114%;
   }
   .Cards-background .card-container .card {
     margin-top: 3%;
@@ -789,21 +801,21 @@ html {
     width: 90%;
   }
   .cardsPosition {
-    margin-left: 20px;
-    padding-left: 20px;
-    width: 90%;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
   .cardsPosition .cards {
-    width: 95%;
+    width: 80%;
     height: 60px;
   }
   .cardsPosition .cards .card-header h1 {
     width: 85%;
   }
   .cardsPosition .description {
-    width: 95%;
+    width: 80%;
   }
   .footerAbout .footerKasa {
     padding: 66px 0 0 0;
