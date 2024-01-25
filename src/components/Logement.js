@@ -65,7 +65,7 @@ function rotateArrow() {
 
   return (
     <div>
-      <div className="banner">
+      <div className="bannerLogement">
         <img src={logo} alt='logo du site' />
         <Link to='/' className='reference'> Accueil </Link>
         <Link to='/about' className='reference'> A Propos </Link>
@@ -74,19 +74,12 @@ function rotateArrow() {
         {selectedLogement.pictures.length > 0 && (
           <img src={selectedLogement.pictures[currentIndex]} alt="Image des logements" />
         )}
-        <img src={arrowLeft} alt='Fleche gauche' className='arrowLeft' onClick={handlePrevClick} />
-        <img src={arrowRight} alt='Fleche droite' className='arrowRight' onClick={handleNextClick} />
       </div>
       <div className='titleLogement'>
         {selectedLogement.title && <h1>{selectedLogement.title}</h1>}
         {selectedLogement.location && (
           <h2 className='location'>{selectedLogement.location}
-                  <div className='host'>
-          {selectedLogement.host && <p className='host'>{selectedLogement.host.name}</p>}
-          {selectedLogement.host && (
-          <img className='host' src={selectedLogement.host.picture} alt='Host Picture' />
-        )}
-        </div></h2>
+        </h2>
         )}
       </div>
       <div className='tagsLogement'>
@@ -98,6 +91,7 @@ function rotateArrow() {
         {selectedLogement.rating && generateStars(selectedLogement.rating)}
       </div>
       <div className='CardsPositionLogement'>
+        <div className='cardsEquipementPosition1'>
         <div className='cardsEquipement'>
           <h1>Fiabilité</h1>
           <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />
@@ -105,12 +99,15 @@ function rotateArrow() {
         <div className='description'>
           {selectedLogement.description && <p>{selectedLogement.description}</p>}
         </div>
+        </div>
+        <div className='cardsEquipementPosition2'>
         <div className='cardsEquipement2'>
           <h1>Équipements</h1>
           <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
         </div>
         <div className='description2'>
           {selectedLogement.equipments && <p>{selectedLogement.equipments}</p>}
+        </div>
         </div>
       </div>
       <div className='footerLogement'>
