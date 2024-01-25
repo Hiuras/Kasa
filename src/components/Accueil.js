@@ -23,8 +23,6 @@ function Accueil() {
 
         <div className="Cards-background">
         <section>
-          <div className='cards-Accueil'>
-            <section className='logement'>
               <div className="card-container">
                 {logement.map((item, index) => (
                   <div className="card" key={index}>
@@ -37,8 +35,6 @@ function Accueil() {
               </div>
             </section>
           </div>
-        </section>
-      </div>
 
                     
       <div className="footerAccueil">
