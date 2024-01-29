@@ -87,9 +87,15 @@ function rotateArrow() {
           <h1 key={index}>{tag}</h1>
         ))}
       </div>
+      <div className='ratingHost'>
+      <div className='host'>
+        <h3>{selectedLogement.host.name}</h3>
+        <img src={selectedLogement.host.picture} alt={selectedLogement.host.name} />
+      </div>
       <div className='ratingLogement'>
         {selectedLogement.rating && generateStars(selectedLogement.rating)}
       </div>
+    </div>
       <div className='CardsPositionLogement'>
         <div className='cardsEquipementPosition1'>
         <div className='cardsEquipement'>

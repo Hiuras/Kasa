@@ -423,6 +423,45 @@ body {
   margin-top: 0px;
 }
 
+.ratingHost {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 0%;
+}
+.ratingHost .host {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+.ratingHost .host h3 {
+  color: #FF6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+.ratingHost .host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+.ratingHost .ratingLogement {
+  display: flex;
+  justify-content: flex-end;
+}
+.ratingHost .ratingLogement .red-star {
+  color: #FF6060;
+}
+.ratingHost .ratingLogement .gray-star {
+  color: #F6F6F6;
+}
+
 .tagsLogement {
   width: auto;
   height: 45px;
@@ -444,20 +483,6 @@ body {
   white-space: nowrap;
   margin-left: 10px;
   padding: 3px 10px 10px 10px;
-}
-
-.ratingLogement {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 200px;
-  margin-top: -28px;
-  margin-bottom: 30px;
-}
-.ratingLogement .red-star {
-  color: #FF6060;
-}
-.ratingLogement .gray-star {
-  color: #F6F6F6;
 }
 
 .CardsPositionLogement {
@@ -570,6 +595,11 @@ body {
   }
   .pictureAccueil img {
     width: 80%;
+  }
+  .pictureAccueil .pictureTitle {
+    margin-top: 8%;
+    margin-left: 11%;
+    position: absolute;
   }
   .Cards-background {
     width: 100%;
@@ -862,6 +892,9 @@ body {
     margin-left: 0px;
     margin-top: 50px;
   }
+  .CardsPositionLogement .cardsEquipementPosition1 {
+    padding-left: 25%;
+  }
   .CardsPositionLogement .cardsEquipementPosition1 .cardsEquipement {
     width: 100%;
     height: 50px;
@@ -873,6 +906,9 @@ body {
   .CardsPositionLogement .cardsEquipementPosition1 .description {
     margin-left: 0;
     width: auto;
+  }
+  .CardsPositionLogement .cardsEquipementPosition2 {
+    padding-left: 25%;
   }
   .CardsPositionLogement .cardsEquipementPosition2 .cardsEquipement2 {
     width: 150%;
