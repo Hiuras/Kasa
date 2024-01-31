@@ -8,17 +8,21 @@ body {
   max-width: 1440px;
 }
 
-.logoAcceuil {
-  width: 100%;
-  height: auto;
+.banner {
+  width: 90%;
+  height: 68px;
   margin-top: 45px;
   margin-bottom: 50px;
+  display: flex;
+  margin-left: 5%;
 }
-.logoAcceuil img {
-  margin-right: 58%;
-  margin-left: 20px;
+.banner nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
 }
-.logoAcceuil .reference {
+.banner nav .reference {
   color: #FF6060;
   font-family: Montserrat;
   font-size: 24px;
@@ -27,11 +31,12 @@ body {
   line-height: 142.6%;
   text-decoration: none;
 }
-.logoAcceuil .reference:hover {
+.banner nav .reference:hover {
   text-decoration: underline;
 }
-.logoAcceuil :nth-child(3) {
+.banner nav .reference:nth-child(2) {
   margin-left: 2%;
+  margin-top: 0;
 }
 
 .pictureAccueil {
@@ -120,47 +125,13 @@ body {
   font-weight: 500;
   line-height: 142.6%;
   margin-top: 0;
-  width: 513px;
+  width: 100%;
   height: 46px;
-  margin-left: 370px;
+  display: flex;
+  justify-content: center;
 }
 
 /*About*/
-.bannerAbout {
-  width: 100%;
-  height: 68px;
-  margin-top: 45px;
-  margin-bottom: 50px;
-  display: flex;
-}
-.bannerAbout .About {
-  width: 90%;
-  display: flex;
-  margin-left: 5%;
-}
-.bannerAbout .About img {
-  margin-right: 720px;
-}
-.bannerAbout .About .reference {
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
-  text-decoration: none;
-}
-.bannerAbout .About .reference:hover {
-  text-decoration: underline;
-}
-.bannerAbout .About :nth-child(3) {
-  margin-left: 57px;
-  white-space: nowrap;
-}
-.bannerAbout .About :nth-child(2) {
-  padding-top: 22px;
-}
-
 .pictureAbout {
   width: 100%;
   height: auto;
@@ -247,43 +218,13 @@ body {
   font-weight: 500;
   line-height: 142.6%;
   margin-top: 0;
-  width: 513px;
+  width: 100%;
   height: 46px;
-  margin-left: 370px;
+  display: flex;
+  justify-content: center;
 }
 
 /*Error*/
-.bannerError {
-  width: 100%;
-  height: 68px;
-  margin-top: 45px;
-  margin-bottom: 50px;
-  display: flex;
-}
-.bannerError img {
-  margin-right: 720px;
-}
-.bannerError .reference {
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
-  text-decoration: none;
-}
-.bannerError .reference:hover {
-  text-decoration: underline;
-}
-.bannerError :nth-child(3) {
-  margin-left: 57px;
-  white-space: nowrap;
-  padding-top: 22px;
-}
-.bannerError :nth-child(2) {
-  padding-top: 22px;
-}
-
 .Error404 {
   justify-items: center;
   display: grid;
@@ -340,44 +281,13 @@ body {
   font-weight: 500;
   line-height: 142.6%;
   margin-top: 0;
-  width: 513px;
+  width: 100%;
   height: 46px;
-  margin-left: 340px;
+  display: flex;
+  justify-content: center;
 }
 
 /*Logement*/
-.bannerLogement {
-  width: 90%;
-  height: 68px;
-  margin-top: 45px;
-  margin-bottom: 50px;
-  display: flex;
-  margin-left: 5%;
-}
-.bannerLogement img {
-  margin-right: 720px;
-}
-.bannerLogement .reference {
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
-  text-decoration: none;
-}
-.bannerLogement .reference:hover {
-  text-decoration: underline;
-}
-.bannerLogement :nth-child(3) {
-  margin-left: 57px;
-  white-space: nowrap;
-  padding-top: 1.5%;
-}
-.bannerLogement :nth-child(2) {
-  padding-top: 22px;
-}
-
 .pictureLogement {
   width: 100%;
   height: 415px;
@@ -424,11 +334,12 @@ body {
 }
 
 .ratingHost {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   margin-top: 0%;
+  margin-bottom: 2%;
 }
 .ratingHost .host {
   display: flex;
@@ -454,6 +365,7 @@ body {
 .ratingHost .ratingLogement {
   display: flex;
   justify-content: flex-end;
+  margin-top: 1%;
 }
 .ratingHost .ratingLogement .red-star {
   color: #FF6060;
@@ -485,23 +397,24 @@ body {
   padding: 3px 10px 10px 10px;
 }
 
-.CardsPositionLogement {
+.directionRow {
   display: flex;
-  width: 90%;
+}
+.directionRow .CardsPositionLogement {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
   margin-left: 5%;
 }
-.CardsPositionLogement .cardsEquipementPosition1 {
-  width: 60%;
-}
-.CardsPositionLogement .cardsEquipementPosition1 .cardsEquipement {
+.directionRow .CardsPositionLogement .cardsEquipement1 {
   background-color: #FF6060;
-  width: 60%;
+  width: 75%;
   height: 52px;
   display: flex;
   align-items: center;
   border-radius: 5px;
 }
-.CardsPositionLogement .cardsEquipementPosition1 .cardsEquipement h1 {
+.directionRow .CardsPositionLogement .cardsEquipement1 h1 {
   width: 80%;
   color: #FFF;
   font-family: Montserrat;
@@ -511,9 +424,13 @@ body {
   line-height: 142.6%;
   margin-left: 3%;
 }
-.CardsPositionLogement .cardsEquipementPosition1 .description {
-  width: 55.6%;
-  height: auto;
+.directionRow .CardsPositionLogement .cardsEquipement1 img {
+  cursor: pointer;
+}
+.directionRow .CardsPositionLogement .description {
+  width: 75%;
+  height: 0;
+  overflow: hidden;
   background-color: #F6F6F6;
   color: #FF6060;
   font-family: Montserrat;
@@ -521,20 +438,21 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 142.6%;
-  padding: 20px;
+  padding: 0;
 }
-.CardsPositionLogement .cardsEquipementPosition2 {
-  width: 40%;
+.directionRow .cardsEquipementPosition2 {
+  width: 35%;
 }
-.CardsPositionLogement .cardsEquipementPosition2 .cardsEquipement2 {
+.directionRow .cardsEquipementPosition2 .cardsEquipement2 {
   background-color: #FF6060;
-  width: 80%;
+  width: 90%;
   height: 52px;
   display: flex;
   align-items: center;
   border-radius: 5px;
+  display: flex;
 }
-.CardsPositionLogement .cardsEquipementPosition2 .cardsEquipement2 h1 {
+.directionRow .cardsEquipementPosition2 .cardsEquipement2 h1 {
   width: 80%;
   color: #FFF;
   font-family: Montserrat;
@@ -544,9 +462,13 @@ body {
   line-height: 142.6%;
   margin-left: 3%;
 }
-.CardsPositionLogement .cardsEquipementPosition2 .description2 {
-  width: 73%;
-  height: auto;
+.directionRow .cardsEquipementPosition2 .cardsEquipement2 img {
+  cursor: pointer;
+}
+.directionRow .description2 {
+  width: 90%;
+  height: 0;
+  overflow: hidden;
   background-color: #F6F6F6;
   color: #FF6060;
   font-family: Montserrat;
@@ -554,7 +476,33 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 142.6%;
-  padding: 20px;
+  padding: 0;
+}
+.directionRow .description2 p {
+  width: 50%;
+  white-space: nowrap;
+}
+.directionRow .arrow.rotated {
+  transform: rotate(180deg);
+}
+.directionRow .description.open {
+  height: auto;
+}
+.directionRow .description {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+.directionRow .arrow.rotated {
+  transform: rotate(180deg);
+}
+.directionRow .description2.open {
+  height: auto;
+}
+.directionRow .description2 {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
 }
 
 .footerLogement {
@@ -577,9 +525,10 @@ body {
   font-weight: 500;
   line-height: 142.6%;
   margin-top: 0;
-  width: 513px;
+  width: 100%;
   height: 46px;
-  margin-left: 340px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1115px) {
@@ -612,22 +561,25 @@ body {
   html {
     display: block;
   }
-  .logoAcceuil {
+  .banner {
     width: 100%;
     margin-left: 5%;
   }
-  .logoAcceuil img {
-    width: 20%;
+  .banner img {
+    width: 120px;
     margin-right: 0;
     margin-left: 2%;
   }
-  .logoAcceuil .reference {
+  .banner nav {
+    margin-right: 10%;
+    margin-top: 40px;
+  }
+  .banner nav .reference {
     width: auto;
-    margin-left: 39%;
     margin-top: 5% x;
     font-size: 12px;
   }
-  .logoAcceuil :nth-child(3) {
+  .banner nav :nth-child(3) {
     margin-left: 5%;
     margin-right: 12%;
     white-space: nowrap;
@@ -676,7 +628,7 @@ body {
     font-weight: 500;
     line-height: 142.6%;
     margin-top: -40px;
-    margin-left: 20px;
+    margin-left: 0;
     white-space: nowrap;
     max-width: 90%;
     overflow: hidden;
@@ -687,7 +639,6 @@ body {
   }
   .footerAccueil .footerText {
     font-size: 12px;
-    margin-left: 0px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -747,7 +698,6 @@ body {
     font-size: 12px;
     display: flex;
     justify-content: center;
-    margin-left: 0;
     width: 100%;
     margin-top: 10px;
   }
@@ -816,7 +766,6 @@ body {
     justify-content: center;
     width: 100%;
     margin-top: 10px;
-    margin-left: 0;
   }
   /*Logement*/
   .bannerLogement {
@@ -864,6 +813,7 @@ body {
     font-weight: 500;
     line-height: 142.6%;
     margin-left: 5%;
+    white-space: wrap;
   }
   .titleLogement h1 {
     margin-bottom: 5px;
@@ -879,18 +829,22 @@ body {
   .tagsLogement {
     margin-top: 10px;
   }
-  .ratingLogement {
+  .ratingHost {
     margin-top: 0;
     display: flex;
     justify-content: start;
+    flex-direction: row-reverse;
     margin-left: 10px;
+  }
+  .ratingHost .ratingLogement {
+    margin-left: 5%;
+    margin-top: 20px;
   }
   .CardsPositionLogement {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
-    margin-top: 50px;
   }
   .CardsPositionLogement .cardsEquipementPosition1 {
     padding-left: 25%;
@@ -920,10 +874,6 @@ body {
   }
   .CardsPositionLogement .cardsEquipementPosition2 .description2 {
     margin-left: 0;
-    width: 130%;
-  }
-  .CardsPositionLogement .cardsEquipementPosition2 .description2 p {
-    width: 100%;
   }
   .footerLogement .footerKasa {
     padding: 66px 0 0 0;
@@ -932,8 +882,7 @@ body {
     font-size: 12px;
     display: flex;
     justify-content: center;
-    margin-left: 135px;
-    width: 133px;
+    width: 100%;
     margin-top: 10px;
   }
 }/*# sourceMappingURL=Styles.css.map */

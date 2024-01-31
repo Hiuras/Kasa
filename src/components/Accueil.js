@@ -11,10 +11,12 @@ import { Link } from 'react-router-dom';
 function Accueil() {
     return (
       <div>
-        <div className='logoAcceuil'>
+        <div className='banner'>
         <img src={logo} alt="logo du site" className='logoDuSite' />
+        <nav>
         <Link to='/' className='reference'>Accueil</Link>
         <Link to="/about" className='reference'>A Propos</Link>
+        </nav>
         </div>
 
         <div className='pictureAccueil'>

@@ -15,14 +15,83 @@ import arrowLeft from '../assets/Arrow_left.png';
 import arrowRight from '../assets/Arrrow_right.png';
 import '../styles/Styles.css';
 
+const Card = ({ title, arrowIndex, rotateArrow, isOpen }) => (
+
+    <div className='cardsEquipement1'>
+      <h1>{title}</h1>
+      <img
+        src={Arrow}
+        alt='fleche'
+        onClick={() => rotateArrow(arrowIndex)}
+        className={`arrow ${isOpen ? 'rotated' : ''}`}
+      />
+    </div>
+);
+
+const Description = ({ arrowIndex, description, isOpen }) => (
+  <div className={`description${isOpen ? ' open' : ''}`}>
+    {description && <p>{description}</p>}
+  </div>
+);
+
+const Card2 = ({ title, arrowIndex, rotateArrow, isOpen }) => (
+    <div className='cardsEquipement2'>
+      <h1>{title}</h1>
+      <img
+        src={Arrow}
+        alt='fleche'
+        onClick={() => rotateArrow(arrowIndex)}
+        className={`arrow ${isOpen ? 'rotated' : ''}`}
+      />
+    </div>
+);
+
+const Description2 = ({ arrowIndex, description, isOpen }) => (
+  <div className={`description2${isOpen ? ' open' : ''}`}>
+    {description && <p>{description[1]}</p>}
+    {description && <p>{description[2]}</p>}
+    {description && <p>{description[3]}</p>}
+    {description && <p>{description[4]}</p>}
+    {description && <p>{description[5]}</p>}
+    {description && <p>{description[6]}</p>}
+    {description && <p>{description[7]}</p>}
+  </div>
+);
+
 function Logement() {
   const { id } = useParams();
   const selectedLogement = logement.find(item => item.id === id);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isArrowRotated1, setIsArrowRotated1] = useState(false);
+  const [isArrowRotated2, setIsArrowRotated2] = useState(false);
 
-  if (!selectedLogement) {
-    return <div>Logement non trouvé</div>;
-  }
+  const rotateArrow = (arrowIndex) => {
+    setIsArrowRotated(arrowIndex, !getIsArrowRotated(arrowIndex));
+  };
+
+  const setIsArrowRotated = (arrowIndex, value) => {
+    switch (arrowIndex) {
+      case 1:
+        setIsArrowRotated1(value);
+        break;
+      case 2:
+        setIsArrowRotated2(value);
+        break;
+      default:
+        break;
+    }
+  };
+
+  const getIsArrowRotated = (arrowIndex) => {
+    switch (arrowIndex) {
+      case 1:
+        return isArrowRotated1;
+      case 2:
+        return isArrowRotated2;
+      default:
+        return false;
+    }
+  };
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? selectedLogement.pictures.length - 1 : prevIndex - 1));
@@ -31,25 +100,7 @@ function Logement() {
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex === selectedLogement.pictures.length - 1 ? 0 : prevIndex + 1));
   };
-function rotateArrow() {
-        let isArrowRotated = false;
 
-        const arrowBack = document.querySelector('.arrow');
-        const description = document.querySelector('.description');
-
-        if (!isArrowRotated) {
-            arrowBack.style.transform = 'rotate(180deg)';
-            description.style.height = '109px;';
-        } else {
-            arrowBack.style.transform = 'rotate(0deg)';
-            description.style.height = '0px';
-        }
-
-        isArrowRotated = !isArrowRotated;
-
-        arrowBack.style.transitionDuration = '1s';
-        description.style.transitionDuration = '1s';
-    }
 
     function generateStars(rating) {
       const maxStars = 5;
@@ -65,10 +116,12 @@ function rotateArrow() {
 
   return (
     <div>
-      <div className="bannerLogement">
+      <div className="banner">
         <img src={logo} alt='logo du site' />
+        <nav>
         <Link to='/' className='reference'> Accueil </Link>
         <Link to='/about' className='reference'> A Propos </Link>
+        </nav>
       </div>
       <div className='pictureLogement'>
         {selectedLogement.pictures.length > 0 && (
@@ -96,33 +149,41 @@ function rotateArrow() {
         {selectedLogement.rating && generateStars(selectedLogement.rating)}
       </div>
     </div>
-      <div className='CardsPositionLogement'>
-        <div className='cardsEquipementPosition1'>
-        <div className='cardsEquipement'>
-          <h1>Fiabilité</h1>
-          <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />
-        </div>
-        <div className='description'>
-          {selectedLogement.description && <p>{selectedLogement.description}</p>}
-        </div>
-        </div>
-        <div className='cardsEquipementPosition2'>
-        <div className='cardsEquipement2'>
-          <h1>Équipements</h1>
-          <img src={Arrow} alt='fleche' onClick={rotateArrow} className='arrow' />        
-        </div>
-        <div className='description2'>
-          {selectedLogement.equipments && <p>{selectedLogement.equipments}</p>}
-        </div>
-        </div>
+    <div className='directionRow'>
+    <div className='CardsPositionLogement'>
+        <Card
+          title='Fiabilité'
+          arrowIndex={1}
+          rotateArrow={rotateArrow}
+          isOpen={isArrowRotated1}
+        />
+        <Description
+          arrowIndex={1}
+          description={selectedLogement.description}
+          isOpen={isArrowRotated1}
+        />
+              </div>
+         <div className='cardsEquipementPosition2'>
+        <Card2
+          title='Équipements'
+          arrowIndex={2}
+          rotateArrow={rotateArrow}
+          isOpen={isArrowRotated2}
+        />
+        <Description2
+          arrowIndex={2}
+          description={selectedLogement.equipments}
+          isOpen={isArrowRotated2}
+        />
+      </div>
       </div>
       <div className='footerLogement'>
-      <div className='footerKasa'>
-      <img src={k} alt='k Footer' />
-      <img src={group} alt='logoSite' />
-      <img src={s} alt='s Footer' />
-      <img src={a} alt='a Footer' />
-      </div>
+        <div className='footerKasa'>
+          <img src={k} alt='k Footer' />
+          <img src={group} alt='logoSite' />
+          <img src={s} alt='s Footer' />
+          <img src={a} alt='a Footer' />
+        </div>
         <p>© 2020 Kasa. All rights reserved</p>
       </div>
     </div>

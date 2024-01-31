@@ -9,10 +9,12 @@ import '../styles/Styles.css'
 function error() {
     return (
         <div>
-        <div className="bannerError">
+        <div className="banner">
              <img src={logo} alt="logo du site" className='logoDuSite' />
-            <Link to='/error' className='reference'>Accueil</Link>
+             <nav>
+            <Link to='/' className='reference'>Accueil</Link>
             <Link to="/about" className='reference'>A Propos</Link>
+            </nav>
         </div>
         <div className='Error404'>
             <h1>404</h1>

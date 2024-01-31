@@ -96,14 +96,14 @@ function About() {
 
   return (
     <div>
-      <div className='bannerAbout'>
-        <div className='About'>
+      <div className='banner'>
         <img src={logoImage} alt='logo du site'  />
+        <nav>
         <Link to='/' className='reference'>
           Accueil
         </Link>
         <h2 className='reference' onClick={handleClick}>A Propos</h2>
-      </div>
+        </nav>
       </div>
       <div className='pictureAbout'>
         <img src={presentationImage} alt='image de presentation' />
