@@ -127,6 +127,9 @@ function Logement() {
         {selectedLogement.pictures.length > 0 && (
           <img src={selectedLogement.pictures[currentIndex]} alt="Image des logements" />
         )}
+        <img src={arrowLeft} alt='Fleche ' onClick={handlePrevClick} className='arrowLeft'/>
+        <img src={arrowRight} alt='FlecheCarrousel2' onClick={handleNextClick} className='arrowRight' />
+        <div className="counter">{currentIndex + 1} / {selectedLogement.pictures.length}</div>
       </div>
       <div className='titleLogement'>
         {selectedLogement.title && <h1>{selectedLogement.title}</h1>}

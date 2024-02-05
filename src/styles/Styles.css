@@ -60,9 +60,12 @@ body {
   font-weight: 500;
   line-height: 142.6%;
   position: relative;
-  margin-top: -11%;
+  margin-top: -140px;
   margin-bottom: 10%;
-  margin-left: 24%;
+  display: flex;
+  justify-content: center;
+  width: 88%;
+  white-space: wrap;
 }
 
 .Cards-background {
@@ -100,9 +103,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: wrap;
 }
 
 .footerAccueil {
@@ -289,6 +290,7 @@ body {
 
 /*Logement*/
 .pictureLogement {
+  position: relative;
   width: 100%;
   height: 415px;
   display: flex;
@@ -298,16 +300,30 @@ body {
   width: 90%;
   height: 415px;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pictureLogement .arrowLeft,
+.pictureLogement .arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46.68px;
+  height: 79.2px;
+  cursor: pointer;
 }
 .pictureLogement .arrowLeft {
-  width: 46.68px;
-  height: 79.2px;
-  cursor: pointer;
+  left: 75px;
 }
 .pictureLogement .arrowRight {
-  width: 46.68px;
-  height: 79.2px;
-  cursor: pointer;
+  right: 75px;
+}
+.pictureLogement .counter {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  margin-top: 380px;
+  color: #FFF;
 }
 
 .titleLogement {
@@ -338,7 +354,7 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  margin-top: 0%;
+  margin-top: -6%;
   margin-bottom: 2%;
 }
 .ratingHost .host {
@@ -546,9 +562,9 @@ body {
     width: 80%;
   }
   .pictureAccueil .pictureTitle {
-    margin-top: 8%;
-    margin-left: 11%;
+    margin-top: 75px;
     position: absolute;
+    white-space: wrap;
   }
   .Cards-background {
     width: 100%;
@@ -562,7 +578,7 @@ body {
     display: block;
   }
   .banner {
-    width: 100%;
+    width: 95%;
     margin-left: 5%;
   }
   .banner img {
@@ -629,10 +645,8 @@ body {
     line-height: 142.6%;
     margin-top: -40px;
     margin-left: 0;
-    white-space: nowrap;
+    white-space: wrap;
     max-width: 90%;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .footerAccueil .footerKasa {
     padding: 66px 0 0 0;
@@ -799,12 +813,17 @@ body {
   .pictureLogement img {
     width: 90%;
     height: 255px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .pictureLogement .arrowRight {
-    left: 0;
+    right: 75px;
+  }
+  .pictureLogement .counter {
+    margin-top: 220px;
   }
   .titleLogement {
-    width: 335px;
+    width: 85%;
     height: 46px;
     color: #FF6060;
     font-family: Montserrat;
@@ -828,6 +847,8 @@ body {
   }
   .tagsLogement {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .ratingHost {
     margin-top: 0;
@@ -884,5 +905,15 @@ body {
     justify-content: center;
     width: 100%;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 485px) {
+  .pictureAccueil .pictureTitle {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 396px) {
+  .ratingHost {
+    margin-top: 20%;
   }
 }/*# sourceMappingURL=Styles.css.map */

@@ -63,9 +63,12 @@ body {
         font-weight: 500;
         line-height: 142.6%;
         position: relative;
-        margin-top: -11%;
+        margin-top: -140px;
         margin-bottom: 10%;
-        margin-left: 24%;
+        display: flex;
+        justify-content: center;
+        width: 88%;
+        white-space: wrap;
     }
 
 }
@@ -106,9 +109,7 @@ body {
             font-style: normal;
             font-weight: 500;
             line-height: 142.6%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            white-space: wrap;
         }
     }
 }
@@ -301,26 +302,46 @@ body {
 /*Logement*/
 
 .pictureLogement {
+    position: relative;
     width: 100%;
     height: 415px;
     display: flex;
     justify-content: center;
+
     img {
         width: 90%;
         height: 415px;
         border-radius: 25px;
+        object-fit: cover;
     }
-    .arrowLeft {
-        width: 46.68px;
-        height: 79.2px; 
-        cursor: pointer;
-    }
+
+    .arrowLeft,
     .arrowRight {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         width: 46.68px;
         height: 79.2px; 
         cursor: pointer;
+    }
+
+    .arrowLeft {
+        left: 75px;
+    }
+
+    .arrowRight {
+        right: 75px;
+    }
+
+    .counter {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        margin-top: 380px;
+        color: $color_2;
     }
 }
+
 
 .titleLogement {
     font-family: Montserrat;
@@ -350,7 +371,7 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: column ;
-    margin-top: 0%;
+    margin-top: -6%;
     margin-bottom: 2%;
     .host {
         display: flex;
@@ -566,9 +587,9 @@ body {
             width: 80%;
         }
         .pictureTitle {
-            margin-top: 8%;
-            margin-left: 11%;
+            margin-top: 75px;
             position: absolute;
+            white-space: wrap;
         }
     }
 
@@ -589,7 +610,7 @@ body {
     }
 
     .banner {
-        width: 100%;
+        width: 95%;
         margin-left: 5%;
         img {
             width: 120px;
@@ -658,10 +679,8 @@ body {
                     line-height: 142.6%;
                     margin-top: -40px;
                     margin-left: 0;
-                    white-space: nowrap;
+                    white-space: wrap;
                     max-width: 90%;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
                 }
             }
         }
@@ -853,14 +872,18 @@ body {
         img {
             width: 90%;
             height: 255px; 
+            object-fit: cover;
         }
         .arrowRight{
-            left: 0;
+            right: 75px;
+        }
+        .counter {
+            margin-top: 220px;
         }
     }
 
     .titleLogement {
-        width: 335px;
+        width: 85%;
         height: 46px; 
         color: #FF6060;
         font-family: Montserrat;
@@ -885,7 +908,10 @@ body {
 
     .tagsLogement {
         margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
+    
 
     .ratingHost {
         margin-top: 0;
@@ -932,8 +958,6 @@ body {
             }
             .description2 {
                 margin-left: 0;
-                p{
-                }
             }
     }
     }
@@ -951,4 +975,20 @@ body {
         }
     }
 
+}
+
+@media screen and (max-width: 485px) {
+    .pictureAccueil {
+    .pictureTitle {
+        margin-top: 25px;
+    }
+    }
+}
+
+
+
+@media screen and (max-width: 396px) {
+    .ratingHost {
+        margin-top: 20%;
+    }
 }
