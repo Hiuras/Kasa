@@ -3,6 +3,7 @@ import App from './components/App';
 import About from './components/About';
 import Error from './components/Error';
 import LogementDetail from './components/Logement';
+import LogementData from './components/Logement';
 
 const AppRoutes = () => {
   return (

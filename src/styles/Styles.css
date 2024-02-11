@@ -37,6 +37,7 @@ body {
 .banner nav .reference:nth-child(2) {
   margin-left: 2%;
   margin-top: 0;
+  white-space: nowrap;
 }
 
 .pictureAccueil {
@@ -79,7 +80,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 .Cards-background .card {
-  margin-top: 5%;
+  margin-top: 1.5%;
   margin-left: 8%;
   width: 84%;
   height: 95%;
@@ -151,7 +152,8 @@ body {
 .cardsPosition {
   width: 100%;
   margin-top: 38px;
-  margin-left: 0;
+  display: grid;
+  justify-items: center;
 }
 .cardsPosition .description {
   background-color: #F6F6F6;
@@ -160,7 +162,6 @@ body {
   overflow: hidden;
   width: 75%;
   height: 0;
-  margin-left: 10%;
 }
 .cardsPosition .description p {
   color: #FF6060;
@@ -176,7 +177,6 @@ body {
   width: 75%;
   height: 52px;
   border-radius: 5px;
-  margin-left: 10%;
 }
 .cardsPosition .cards .card-header {
   height: 52px;
@@ -354,8 +354,8 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  margin-top: -6%;
-  margin-bottom: 2%;
+  margin-top: -136px;
+  margin-bottom: 90px;
 }
 .ratingHost .host {
   display: flex;
@@ -424,7 +424,7 @@ body {
 }
 .directionRow .CardsPositionLogement .cardsEquipement1 {
   background-color: #FF6060;
-  width: 75%;
+  width: 90%;
   height: 52px;
   display: flex;
   align-items: center;
@@ -444,7 +444,7 @@ body {
   cursor: pointer;
 }
 .directionRow .CardsPositionLogement .description {
-  width: 75%;
+  width: 90%;
   height: 0;
   overflow: hidden;
   background-color: #F6F6F6;
@@ -457,7 +457,7 @@ body {
   padding: 0;
 }
 .directionRow .cardsEquipementPosition2 {
-  width: 35%;
+  width: 45%;
 }
 .directionRow .cardsEquipementPosition2 .cardsEquipement2 {
   background-color: #FF6060;
@@ -496,7 +496,6 @@ body {
 }
 .directionRow .description2 p {
   width: 50%;
-  white-space: nowrap;
 }
 .directionRow .arrow.rotated {
   transform: rotate(180deg);
@@ -692,18 +691,17 @@ body {
     margin-left: 0;
     padding-left: 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
   .cardsPosition .cards {
-    width: 80%;
+    width: 95%;
     height: 60px;
   }
   .cardsPosition .cards .card-header h1 {
     width: 85%;
   }
   .cardsPosition .description {
-    width: 80%;
+    width: 95%;
   }
   .footerAbout .footerKasa {
     padding: 66px 0 0 0;
@@ -856,44 +854,50 @@ body {
     justify-content: start;
     flex-direction: row-reverse;
     margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   .ratingHost .ratingLogement {
     margin-left: 5%;
     margin-top: 20px;
   }
-  .CardsPositionLogement {
-    width: 100%;
+  .directionRow {
     display: flex;
     flex-direction: column;
+  }
+  .directionRow .CardsPositionLogement {
+    width: 100%;
+    display: grid;
+    justify-items: center;
     margin-left: 0px;
   }
-  .CardsPositionLogement .cardsEquipementPosition1 {
-    padding-left: 25%;
-  }
-  .CardsPositionLogement .cardsEquipementPosition1 .cardsEquipement {
-    width: 100%;
+  .directionRow .CardsPositionLogement .cardsEquipement1 {
+    width: 90%;
     height: 50px;
     margin-left: 0;
   }
-  .CardsPositionLogement .cardsEquipementPosition1 .cardsEquipement h1 {
+  .directionRow .CardsPositionLogement .cardsEquipement1 h1 {
     margin-left: 10px;
   }
-  .CardsPositionLogement .cardsEquipementPosition1 .description {
+  .directionRow .CardsPositionLogement .description {
     margin-left: 0;
-    width: auto;
+    width: 90;
   }
-  .CardsPositionLogement .cardsEquipementPosition2 {
-    padding-left: 25%;
+  .directionRow .cardsEquipementPosition2 {
+    padding-left: 0;
+    display: grid;
+    justify-items: center;
+    width: 100%;
   }
-  .CardsPositionLogement .cardsEquipementPosition2 .cardsEquipement2 {
-    width: 150%;
+  .directionRow .cardsEquipementPosition2 .cardsEquipement2 {
+    width: 90%;
     height: 50px;
     margin-top: 50px;
   }
-  .CardsPositionLogement .cardsEquipementPosition2 .cardsEquipement2 h1 {
+  .directionRow .cardsEquipementPosition2 .cardsEquipement2 h1 {
     margin-left: 10px;
   }
-  .CardsPositionLogement .cardsEquipementPosition2 .description2 {
+  .directionRow .cardsEquipementPosition2 .description2 {
     margin-left: 0;
   }
   .footerLogement .footerKasa {
@@ -914,6 +918,6 @@ body {
 }
 @media screen and (max-width: 396px) {
   .ratingHost {
-    margin-top: 20%;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=Styles.css.map */

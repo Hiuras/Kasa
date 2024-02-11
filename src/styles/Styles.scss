@@ -39,6 +39,7 @@ body {
                 &:nth-child(2){
                     margin-left: 2%;
                     margin-top: 0;
+                    white-space: nowrap;
                 }
         }
     }
@@ -85,7 +86,7 @@ body {
     }
 
     .card {
-        margin-top: 5%;
+        margin-top: 1.5%;
         margin-left: 8%;
         width: 84%;
         height: 95%;
@@ -161,7 +162,8 @@ body {
 .cardsPosition {
     width: 100%;
     margin-top: 38px;
-    margin-left: 0;
+    display: grid;
+    justify-items: center;
     .description {
         background-color: $color_3;
         margin-top: 0px;
@@ -169,7 +171,6 @@ body {
         overflow: hidden;
         width: 75%;
         height: 0;
-        margin-left: 10%;
         p {
             color: $color_1;
             font-family: Montserrat;
@@ -185,7 +186,6 @@ body {
         width: 75%;
         height: 52px;
         border-radius: 5px;
-        margin-left: 10%;
         .card-header{
             height: 52px;
             display: flex;
@@ -371,8 +371,8 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: column ;
-    margin-top: -6%;
-    margin-bottom: 2%;
+    margin-top: -136px;
+    margin-bottom: 90px;
     .host {
         display: flex;
         flex-direction: row;
@@ -439,7 +439,7 @@ body {
     margin-left: 5%;
     .cardsEquipement1 {
         background-color: $color_1;
-        width: 75%;
+        width: 90%;
         height: 52px;
         display: flex;
         align-items: center;
@@ -459,7 +459,7 @@ body {
         }
     }
     .description {
-        width: 75%;
+        width: 90%;
         height: 0;
         overflow: hidden;
         background-color: $color_3;
@@ -473,7 +473,7 @@ body {
     }
 }
 .cardsEquipementPosition2 {
-    width: 35%;
+    width: 45%;
     .cardsEquipement2 {
         background-color: $color_1;
         width: 90%;
@@ -511,7 +511,6 @@ body {
         padding: 0;
         p{
             width: 50%;
-            white-space: nowrap;
         }
     }
     
@@ -736,10 +735,9 @@ body {
         margin-left: 0;
         padding-left: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
         .cards{
-            width: 80%;
+            width: 95%;
             height: 60px; 
             .card-header{
             h1 {
@@ -748,7 +746,7 @@ body {
         }
     }
     .description{
-        width: 80%;
+        width: 95%;
     }
     }
 
@@ -919,21 +917,24 @@ body {
         justify-content: start;
         flex-direction: row-reverse;
         margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 30px;
         .ratingLogement{
             margin-left: 5%;
             margin-top: 20px;
         }
     }
 
-    .CardsPositionLogement{
-        width: 100%;
+    .directionRow{
         display: flex;
         flex-direction: column;
+    .CardsPositionLogement{
+        width: 100%;
+        display: grid;
+        justify-items: center;
         margin-left: 0px;
-        .cardsEquipementPosition1{
-            padding-left: 25%;
-        .cardsEquipement {
-            width: 100%;
+        .cardsEquipement1 {
+            width: 90%;
             height: 50px; 
             margin-left: 0;
             h1 {
@@ -942,14 +943,17 @@ body {
         }
         .description {
             margin-left: 0;
-            width: auto;
+            width: 90;
         }
 
         }
         .cardsEquipementPosition2{
-            padding-left: 25%;
+            padding-left: 0;
+            display: grid;
+            justify-items: center;
+            width: 100%;
             .cardsEquipement2 {
-                width: 150%;
+                width: 90%;
                 height: 50px; 
                 margin-top: 50px;
                 h1 {
@@ -958,7 +962,7 @@ body {
             }
             .description2 {
                 margin-left: 0;
-            }
+    }
     }
     }
 
@@ -989,6 +993,6 @@ body {
 
 @media screen and (max-width: 396px) {
     .ratingHost {
-        margin-top: 20%;
+        margin-top: 0;
     }
 }
