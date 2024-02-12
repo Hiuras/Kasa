@@ -4,9 +4,8 @@ import k from '../assets/k.png'
 import group from '../assets/Group.png'
 import a from '../assets/a.png'
 import s from '../assets/s.png'
-import  { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { useState } from 'react';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logement from '../logements.json';
@@ -64,6 +63,10 @@ function Logement() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isArrowRotated1, setIsArrowRotated1] = useState(false);
   const [isArrowRotated2, setIsArrowRotated2] = useState(false);
+
+  if (!selectedLogement) {
+    return <Navigate to="/error" />;
+  }
 
   const rotateArrow = (arrowIndex) => {
     setIsArrowRotated(arrowIndex, !getIsArrowRotated(arrowIndex));

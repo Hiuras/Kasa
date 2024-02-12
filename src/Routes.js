@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import App from './components/App';
 import About from './components/About';
@@ -12,7 +13,10 @@ const AppRoutes = () => {
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/error" element={<Error />} />
-        <Route path="/logement/:id" element={<LogementDetail />} />
+        <Route
+          path="/logement/:id"
+          element={<LogementDetail logementData={LogementData} />}
+        />
         <Route path="*" element={<Navigate to="/error" />} />
       </Routes>
     </Router>
