@@ -149,56 +149,6 @@ body {
      object-fit: cover;
 }
 
-.cardsPosition {
-  width: 100%;
-  margin-top: 38px;
-  display: grid;
-  justify-items: center;
-}
-.cardsPosition .description {
-  background-color: #F6F6F6;
-  margin-top: 0px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  width: 75%;
-  height: 0;
-}
-.cardsPosition .description p {
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 142.6%;
-  margin-left: 20px;
-}
-.cardsPosition .cards {
-  background-color: #FF6060;
-  width: 75%;
-  height: 52px;
-  border-radius: 5px;
-}
-.cardsPosition .cards .card-header {
-  height: 52px;
-  display: flex;
-}
-.cardsPosition .cards .card-header h1 {
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
-  width: 956px;
-  margin: 10px 0px 10px 15px;
-}
-.cardsPosition .cards .card-header img {
-  width: 32px;
-  height: 32px;
-  margin-top: 8px;
-  cursor: pointer;
-}
-
 .footerAbout {
   background-color: #000;
   width: 100%;
@@ -289,43 +239,6 @@ body {
 }
 
 /*Logement*/
-.pictureLogement {
-  position: relative;
-  width: 100%;
-  height: 415px;
-  display: flex;
-  justify-content: center;
-}
-.pictureLogement img {
-  width: 90%;
-  height: 415px;
-  border-radius: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.pictureLogement .arrowLeft,
-.pictureLogement .arrowRight {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 46.68px;
-  height: 79.2px;
-  cursor: pointer;
-}
-.pictureLogement .arrowLeft {
-  left: 75px;
-}
-.pictureLogement .arrowRight {
-  right: 75px;
-}
-.pictureLogement .counter {
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  margin-top: 380px;
-  color: #FFF;
-}
-
 .titleLogement {
   font-family: Montserrat;
   font-size: 18px;
@@ -658,50 +571,12 @@ body {
     margin-top: 10px;
   }
   /*About*/
-  .bannerAbout {
-    width: 100%;
-  }
-  .bannerAbout img {
-    width: 145px;
-    margin-right: 0;
-    margin-left: 20px;
-  }
-  .bannerAbout .reference {
-    width: auto;
-    margin-left: 43px;
-    margin-top: 35px;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  .bannerAbout :nth-child(3) {
-    margin-left: 26px;
-    padding-top: 0px;
-  }
-  .bannerAbout :nth-child(2) {
-    padding-top: 0px;
-  }
   .pictureAbout {
     display: flex;
     justify-content: center;
   }
   .pictureAbout img {
     width: 90%;
-  }
-  .cardsPosition {
-    margin-left: 0;
-    padding-left: 0;
-    width: 100%;
-    display: grid;
-  }
-  .cardsPosition .cards {
-    width: 95%;
-    height: 60px;
-  }
-  .cardsPosition .cards .card-header h1 {
-    width: 85%;
-  }
-  .cardsPosition .description {
-    width: 95%;
   }
   .footerAbout .footerKasa {
     padding: 66px 0 0 0;
@@ -801,24 +676,6 @@ body {
   }
   .bannerLogement :nth-child(2) {
     padding-top: 0px;
-  }
-  .pictureLogement {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .pictureLogement img {
-    width: 90%;
-    height: 255px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .pictureLogement .arrowRight {
-    right: 75px;
-  }
-  .pictureLogement .counter {
-    margin-top: 220px;
   }
   .titleLogement {
     width: 85%;

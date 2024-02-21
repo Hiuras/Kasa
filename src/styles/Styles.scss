@@ -159,56 +159,6 @@ body {
         }
 }
 
-.cardsPosition {
-    width: 100%;
-    margin-top: 38px;
-    display: grid;
-    justify-items: center;
-    .description {
-        background-color: $color_3;
-        margin-top: 0px;
-        margin-bottom: 16px;
-        overflow: hidden;
-        width: 75%;
-        height: 0;
-        p {
-            color: $color_1;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 142.6%;
-            margin-left: 20px;
-        }
-    }
-    .cards {
-        background-color: $color_1;
-        width: 75%;
-        height: 52px;
-        border-radius: 5px;
-        .card-header{
-            height: 52px;
-            display: flex;
-        h1 {
-            color: $color_2;
-            font-family: Montserrat;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 142.6%;
-            width: 956px;
-            margin: 10px 0px 10px 15px;
-        }
-        img {
-            width: 32px;
-            height: 32px; 
-            margin-top: 8px;
-            cursor: pointer;
-        }
-    }
-}
-}
-
 .footerAbout{
     background-color: $color_4;
     width: 100%;
@@ -300,48 +250,6 @@ body {
 }
 
 /*Logement*/
-
-.pictureLogement {
-    position: relative;
-    width: 100%;
-    height: 415px;
-    display: flex;
-    justify-content: center;
-
-    img {
-        width: 90%;
-        height: 415px;
-        border-radius: 25px;
-        object-fit: cover;
-    }
-
-    .arrowLeft,
-    .arrowRight {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 46.68px;
-        height: 79.2px; 
-        cursor: pointer;
-    }
-
-    .arrowLeft {
-        left: 75px;
-    }
-
-    .arrowRight {
-        right: 75px;
-    }
-
-    .counter {
-        display: flex;
-        align-items: flex-end;
-        position: absolute;
-        margin-top: 380px;
-        color: $color_2;
-    }
-}
-
 
 .titleLogement {
     font-family: Montserrat;
@@ -700,54 +608,12 @@ body {
 
     /*About*/
 
-    .bannerAbout {
-        width: 100%;
-        img {
-            width: 145px;
-            margin-right: 0;
-            margin-left: 20px;
-        }
-        .reference {
-            width: auto;
-            margin-left: 43px;
-            margin-top: 35px;
-            font-size: 12px; 
-            cursor: pointer;
-        }
-       :nth-child(3) {
-            margin-left: 26px;
-            padding-top: 0px;
-          }
-        :nth-child(2) {
-            padding-top: 0px;
-        }
-    }
-
     .pictureAbout {
         display: flex;
         justify-content: center;
         img {
             width: 90%;
         }
-    }
-
-    .cardsPosition{
-        margin-left: 0;
-        padding-left: 0;
-        width: 100%;
-        display: grid;
-        .cards{
-            width: 95%;
-            height: 60px; 
-            .card-header{
-            h1 {
-                width: 85%;
-            }
-        }
-    }
-    .description{
-        width: 95%;
-    }
     }
 
     .footerAbout {
@@ -859,24 +725,6 @@ body {
           }
         :nth-child(2) {
             padding-top: 0px;
-        }
-    }
-
-    .pictureLogement {
-        width: 100%;
-        height: auto; 
-        display: flex;
-        justify-content: center;
-        img {
-            width: 90%;
-            height: 255px; 
-            object-fit: cover;
-        }
-        .arrowRight{
-            right: 75px;
-        }
-        .counter {
-            margin-top: 220px;
         }
     }
 
