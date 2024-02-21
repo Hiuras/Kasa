@@ -756,6 +756,7 @@ body {
         margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 30px;
     }
     
 
@@ -842,5 +843,11 @@ body {
 @media screen and (max-width: 396px) {
     .ratingHost {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .tagsLogement {
+        margin-bottom: 15%;
     }
 }
