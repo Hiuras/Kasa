@@ -259,8 +259,9 @@ body {
     line-height: 142.6%;
     color: $color_1;
     width: 635px;
-    white-space: nowrap;
+    white-space: wrap;
     margin-left: 5%;
+    width: 70%;
     h1 {
         margin-bottom: 15px;
     }
@@ -563,7 +564,7 @@ body {
             margin-left: -7%;
             padding-left: 2%;
             margin-right: -6%;
-            width: 114%;
+            width: 110%;
     
             .card {
                 margin-top: 3%;

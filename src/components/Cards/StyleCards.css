@@ -56,15 +56,15 @@
     display: block;
   }
   .cardsPosition .card {
-    width: 95%;
+    width: 98%;
     height: 60px;
-    margin-left: 12px;
+    margin-left: 3px;
   }
   .cardsPosition .card .card-header h3 {
     width: 85%;
   }
   .cardsPosition #description {
-    width: 95%;
-    margin-left: 12px;
+    width: 98%;
+    margin-left: 3px;
   }
 }/*# sourceMappingURL=StyleCards.css.map */

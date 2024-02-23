@@ -247,8 +247,9 @@ body {
   line-height: 142.6%;
   color: #FF6060;
   width: 635px;
-  white-space: nowrap;
+  white-space: wrap;
   margin-left: 5%;
+  width: 70%;
 }
 .titleLogement h1 {
   margin-bottom: 15px;
@@ -534,7 +535,7 @@ body {
     margin-left: -7%;
     padding-left: 2%;
     margin-right: -6%;
-    width: 114%;
+    width: 110%;
   }
   .Cards-background .card-container .card {
     margin-top: 3%;

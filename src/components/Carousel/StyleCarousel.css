@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .pictureLogement img {
-  width: 1280px;
+  width: 90%;
   height: 415px;
   border-radius: 25px;
   -o-object-fit: cover;
