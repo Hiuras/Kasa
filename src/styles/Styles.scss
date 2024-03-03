@@ -339,13 +339,11 @@ body {
 }
 }
 
-.directionRow{
-    display: flex;
 .CardsPositionLogement {
-    display: flex;
-    flex-direction: column;
-    width: 47%;
     margin-left: 5%;
+    display: flex;
+    .cardCollumn1{
+        width: 100%;
     .cardsEquipement1 {
         background-color: $color_1;
         width: 90%;
@@ -380,9 +378,9 @@ body {
         line-height: 142.6%;
         padding: 0;
     }
-}
-.cardsEquipementPosition2 {
-    width: 45%;
+    }
+    .cardCollumn2{
+        width: 100%;
     .cardsEquipement2 {
         background-color: $color_1;
         width: 90%;
@@ -405,7 +403,6 @@ body {
             cursor: pointer;
         }
     }
-    }
     .description2 {
         width: 90%;
         height: 0;
@@ -421,6 +418,7 @@ body {
         p{
             width: 50%;
         }
+    }
     }
     
 .arrow.rotated {
@@ -779,10 +777,12 @@ body {
         display: flex;
         flex-direction: column;
     .CardsPositionLogement{
-        width: 100%;
+        width: 95%;
         display: grid;
         justify-items: center;
-        margin-left: 0px;
+        margin-left: 5%;
+        .cardCollumn1{
+            margin-bottom: 5%;
         .cardsEquipement1 {
             width: 90%;
             height: 50px; 
@@ -795,8 +795,9 @@ body {
             margin-left: 0;
             width: 90;
         }
-
         }
+        }
+         .cardCollumn2{
         .cardsEquipementPosition2{
             padding-left: 0;
             display: grid;
@@ -812,6 +813,7 @@ body {
             }
             .description2 {
                 margin-left: 0;
+    }
     }
     }
     }

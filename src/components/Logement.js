@@ -6,14 +6,14 @@ import a from '../assets/a.png'
 import s from '../assets/s.png'
 import { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logement from '../logements.json';
 import Arrow from '../assets/arrow_back.png';
-import {CardLogement, DescriptionLogement, CardLogement2, DescriptionLogement2} from './Cards/Card'
-import Carousel from './Carousel/Carousel'
-import handlePrevClick from './Carousel/Carousel'
-import handleNextClick from './Carousel/Carousel'
+import {CardLogement, DescriptionLogement, CardLogement2, DescriptionLogement2} from './CardsLogement/CardLogement';
+import {rotateArrow,setIsArrowRotated,getIsArrowRotated} from './CardsLogement/CardLogement';
+import Carousel from './Carousel/Carousel';
+import handlePrevClick from './Carousel/Carousel';
+import handleNextClick from './Carousel/Carousel';
+import RatingHost from './RatingHosts/RatingHost';
 import '../styles/Styles.css';
 
 
@@ -28,45 +28,18 @@ function Logement() {
     return <Navigate to="/error" />;
   }
 
-  const rotateArrow = (arrowIndex) => {
-    setIsArrowRotated(arrowIndex, !getIsArrowRotated(arrowIndex));
-  };
-
-  const setIsArrowRotated = (arrowIndex, value) => {
-    switch (arrowIndex) {
-      case 1:
-        setIsArrowRotated1(value);
-        break;
-      case 2:
-        setIsArrowRotated2(value);
-        break;
-      default:
-        break;
-    }
-  };
-
-  const getIsArrowRotated = (arrowIndex) => {
-    switch (arrowIndex) {
-      case 1:
-        return isArrowRotated1;
-      case 2:
-        return isArrowRotated2;
-      default:
-        return false;
-    }
-  };
-
-    function generateStars(rating) {
-      const maxStars = 5;
-      const redStars = Math.round(rating);
-      const stars = [];
-  
-      for (let i = 1; i <= maxStars; i++) {
-        stars.push(<FontAwesomeIcon key={i} icon={faStar} className={i <= redStars ? 'red-star' : 'gray-star'} />);
+    const rotateArrow = (arrowIndex) => {
+      switch (arrowIndex) {
+        case 1:
+          setIsArrowRotated1(!isArrowRotated1);
+          break;
+        case 2:
+          setIsArrowRotated2(!isArrowRotated2);
+          break;
+        default:
+          break;
       }
-  
-      return stars;
-    }
+    };
 
   return (
     <div>
@@ -94,42 +67,37 @@ function Logement() {
           <h1 key={index}>{tag}</h1>
         ))}
       </div>
-      <div className='ratingHost'>
-      <div className='host'>
-        <h3>{selectedLogement.host.name}</h3>
-        <img src={selectedLogement.host.picture} alt={selectedLogement.host.name} />
-      </div>
-      <div className='ratingLogement'>
-        {selectedLogement.rating && generateStars(selectedLogement.rating)}
-      </div>
-    </div>
+
+      <RatingHost selectedLogement={selectedLogement} />
 
     <div className='directionRow'>
     <div className='CardsPositionLogement'>
-        <CardLogement
-          title='Fiabilité'
-          arrowIndex={1}
-          rotateArrow={rotateArrow}
-          isOpen={isArrowRotated1}
-        />
-        <DescriptionLogement
-          arrowIndex={1}
-          description={selectedLogement.description}
-          isOpen={isArrowRotated1}
-        />
-              </div>
-         <div className='cardsEquipementPosition2'>
-        <CardLogement2
-          title='Équipements'
-          arrowIndex={2}
-          rotateArrow={rotateArrow}
-          isOpen={isArrowRotated2}
-        />
-        <DescriptionLogement2
-          arrowIndex={2}
-          description={selectedLogement.equipments}
-          isOpen={isArrowRotated2}
-        />
+    <div className='cardCollumn1'>
+    <CardLogement
+        title='Fiabilité'
+        arrowIndex={1}
+        rotateArrow={rotateArrow}
+        isOpen={isArrowRotated1}
+      />
+      <DescriptionLogement
+        arrowIndex={1}
+        description={selectedLogement.description}
+        isOpen={isArrowRotated1}
+      />
+      </div>
+      <div className='cardCollumn2'>
+      <CardLogement2
+        title='Équipements'
+        arrowIndex={2}
+        rotateArrow={rotateArrow}
+        isOpen={isArrowRotated2}
+      />
+      <DescriptionLogement2
+        arrowIndex={2}
+        description={selectedLogement.equipments}
+        isOpen={isArrowRotated2}
+      />
+      </div>
       </div>
       </div>
       
