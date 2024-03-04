@@ -1,23 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logoImage from '../assets/LOGO.png';
 import '../styles/Styles.css';
 import { Card, Description } from './Cards/Card';
 import { useArrowRotation } from './Cards/Card';
 import presentationImage from '../assets/kalen-emsley.png';
-import Arrow from '../assets/arrow_back.png';
 import k from '../assets/k.png';
 import group from '../assets/Group.png';
 import a from '../assets/a.png';
 import s from '../assets/s.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function About() {
   const { rotateArrow } = useArrowRotation();
+  const location = useLocation();
 
-  function handleClick() {
-    const element = document.querySelector('.reference');
-    element.style.textDecoration = 'underline';
-  }
+  useEffect(() => {
+    const element = document.querySelector('.about-reference');
+    if (location.pathname === '/about') {
+      element.style.textDecoration = 'underline';
+    } else {
+      element.style.textDecoration = 'none';
+    }
+  }, [location.pathname]);
 
   return (
     <div>
@@ -27,14 +31,15 @@ function About() {
           <Link to='/' className='reference'>
             Accueil
           </Link>
-          <h2 className='reference' onClick={handleClick}>
+          <Link to="/about" className='about-reference'>
             A Propos
-          </h2>
+          </Link>
         </nav>
       </div>
       <div className='pictureAbout'>
         <img src={presentationImage} alt='image de presentation' />
       </div>
+
       <div className='cardsPosition'>
         <Card title='Fiabilité' arrowIndex={1} rotateArrow={rotateArrow} />
         <Description
@@ -67,6 +72,7 @@ function About() {
           ]}
         />
       </div>
+      
       <div className='footerAbout'>
         <div className='footerKasa'>
           <img src={k} alt='k Footer' />

@@ -2,10 +2,15 @@
 html {
   display: flex;
   justify-content: center;
+  height: 1326px;
 }
 
 body {
   max-width: 1440px;
+}
+
+#root {
+  height: 1266px;
 }
 
 .banner {
@@ -38,6 +43,22 @@ body {
   margin-left: 2%;
   margin-top: 0;
   white-space: nowrap;
+}
+.banner nav .about-reference {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+  margin-left: 2%;
+}
+.banner nav .about-reference:hover {
+  text-decoration: underline;
+}
+.banner nav .active {
+  text-decoration: underline;
 }
 
 .pictureAccueil {
@@ -152,7 +173,7 @@ body {
 .footerAbout {
   background-color: #000;
   width: 100%;
-  height: 209px;
+  height: 455px;
   margin-top: 50px;
 }
 .footerAbout .footerKasa {
@@ -215,7 +236,7 @@ body {
 .footerError {
   background-color: #000;
   width: 100%;
-  height: 209px;
+  height: 277px;
   margin-top: 50px;
 }
 .footerError .footerKasa {
@@ -435,7 +456,7 @@ body {
 .footerLogement {
   background-color: #000;
   width: 100%;
-  height: 209px;
+  height: 455px;
   margin-top: 50px;
 }
 .footerLogement .footerKasa {
@@ -487,6 +508,10 @@ body {
   }
   html {
     display: block;
+    height: 1065px;
+  }
+  #root {
+    height: 1020px;
   }
   .banner {
     width: 95%;
@@ -505,6 +530,18 @@ body {
     width: auto;
     margin-top: 5% x;
     font-size: 12px;
+    text-transform: uppercase;
+  }
+  .banner nav .about-reference {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration: none;
+    margin-left: 2%;
+    text-transform: uppercase;
   }
   .banner nav :nth-child(3) {
     margin-left: 5%;
@@ -642,6 +679,9 @@ body {
     font-weight: 500;
     line-height: 142.6%; /* 19.964px */
     text-decoration-line: underline;
+  }
+  .footerError {
+    height: 288px;
   }
   .footerError .footerKasa {
     padding: 66px 0 0 0;

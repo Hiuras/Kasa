@@ -22,6 +22,7 @@ export const Description = ({ arrowIndex, description }) => {
     </div>
   );
 };
+
 export const useArrowRotation = () => {
   const [isArrowRotated1, setIsArrowRotated1] = useState(false);
   const [isArrowRotated2, setIsArrowRotated2] = useState(false);
